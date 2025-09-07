@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import { useRouter } from "next/router";
 import {
   AuthForm,
   AuthHeader,
@@ -14,10 +13,9 @@ import {
   AuthWrapper,
 } from "@components/Layout/Auth";
 import ROUTES from "@constants/routes";
-import { AuthContext } from "@context/Auth";
 import React from "react";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { UPDATE_USER_PASSWORD } from "src/queries/auth";
 import Field from "@components/Auth/Form/Field";
 import REGEX from "@constants/regex";
@@ -32,14 +30,14 @@ interface Props {
 }
 
 const RecoveryChange: NextPage<Props> = ({ query, backgroundUrl }: Props) => {
-  const router = useRouter();
-  const context = React.useContext(AuthContext);
 
   const token = query?.token;
   const email = query?.email;
 
   const changePasswordCallback = () => {
-    changePassword();
+    changePassword({
+      variables: { ...values, token, email }
+    });
   };
 
   const { onChange, onSubmit, values, errors, setErrors, valid } = useForm(
@@ -50,20 +48,7 @@ const RecoveryChange: NextPage<Props> = ({ query, backgroundUrl }: Props) => {
     }
   );
 
-  const [changePassword, { loading }] = useMutation(UPDATE_USER_PASSWORD, {
-    update(_, { data: { updateUserPassword: _userData } }) {
-      context.login(_userData);
-      router.push(ROUTES.DASHBOARD);
-      if (router.query.continue) router.push(router.query.continue as string);
-      else router.push(ROUTES.DASHBOARD);
-    },
-    onError(err) {
-      setErrors({
-        confirmPassword: err.graphQLErrors[0].message,
-      });
-    },
-    variables: { ...values, token, email },
-  });
+  const [changePassword, { loading }] = useStaticMutation(UPDATE_USER_PASSWORD);
 
   return (
     <AuthContainer>

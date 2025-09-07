@@ -1,8 +1,6 @@
 import { NextPage } from "next";
-import ROUTES from "@constants/routes";
-import { useRouter } from "next/router";
 import DashboardProvider from "@components/Dashboard/Provider";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { CREATE_TRIP } from "@queries/trips";
 import { DashboardPage } from "@typeDefs/auth";
 import Loading from "@components/Layout/Loading";
@@ -15,31 +13,21 @@ interface Props extends DashboardPage {
 }
 
 const TripAdd: NextPage<Props> = ({ currentUser }: Props) => {
-  const { cart, setCart } = React.useContext(CartContext);
-  const router = useRouter();
+  const { cart } = React.useContext(CartContext);
 
-  const [error, setError] = useState<string | null>(null);
+  const [error] = useState<string | null>(null);
 
-  const [createTrip] = useMutation(CREATE_TRIP, {
-    variables: {
-      city: cart?.city,
-      services: cart?.services || [],
-      startDate: formatDate(cart?.checkInDate),
-      endDate: formatDate(cart?.checkOutDate),
-    },
-    onError: (_) => {
-      setError(
-        "Il y a eu un problème avec la création de ton expatriation. Réessaie plus tard."
-      );
-    },
-    async update(_, { data }) {
-      setCart(undefined);
-      router.push(`${ROUTES.DASHBOARD_TRIPS}/${data.createTrip.id}`);
-    },
-  });
+  const [createTrip] = useStaticMutation(CREATE_TRIP);
 
   React.useEffect(() => {
-    createTrip();
+    createTrip({
+      variables: {
+        city: cart?.city,
+        services: cart?.services || [],
+        startDate: formatDate(cart?.checkInDate),
+        endDate: formatDate(cart?.checkOutDate),
+      }
+    });
   }, [createTrip]);
 
   return (

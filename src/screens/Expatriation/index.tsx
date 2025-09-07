@@ -21,8 +21,8 @@ import CommunityCarousel from "@components/Carousel/Community";
 import DestinationCarousel from "@components/Carousel/Destination";
 import FeaturedSearchbar from "@components/Home/Featured/Searchbar";
 import Ambassador from "@components/Home/Ambassador";
-import { useQuery } from "@apollo/client";
 import { addDays, addMonths } from "date-fns";
+import { useStaticQuery } from "@hooks/useStaticQuery";
 
 interface Props {
   data: {
@@ -59,7 +59,7 @@ const Expatriation: NextPage<Props> = ({
     query.checkOutDate ? new Date(query.checkOutDate) : inSixMonth
   );
 
-  const { data: servicesData } = useQuery(GET_SERVICES, {
+  const { data: servicesData } = useStaticQuery(GET_SERVICES, {
     variables: {
       countryIso2: country.iso2,
       checkInDate: checkInDate || inTwoWeek,

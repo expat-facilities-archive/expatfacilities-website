@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_USER_EMAIL = gql`
+export const GET_USER_EMAIL = `
   query getUserEmail($email: String!) {
     getUserEmail(email: $email) {
       success
@@ -8,7 +8,7 @@ export const GET_USER_EMAIL = gql`
   }
 `;
 
-export const LOGIN_USER = gql`
+export const LOGIN_USER = `
   mutation login($email: String!, $password: String!, $auth: UserAuthInput) {
     login(email: $email, password: $password, auth: $auth) {
       user {
@@ -26,7 +26,7 @@ export const LOGIN_USER = gql`
   }
 `;
 
-export const LOGIN_WITH_GOOGLE = gql`
+export const LOGIN_WITH_GOOGLE = `
   mutation loginWithGoogle($token: String!) {
     loginWithGoogle(token: $token) {
       success
@@ -36,7 +36,7 @@ export const LOGIN_WITH_GOOGLE = gql`
   }
 `;
 
-export const REGISTER_USER = gql`
+export const REGISTER_USER = `
   mutation register(
     $email: String!
     $password: String!
@@ -70,7 +70,7 @@ export const REGISTER_USER = gql`
   }
 `;
 
-export const SEND_VERIFICATION = gql`
+export const SEND_VERIFICATION = `
   mutation sendVerification {
     sendVerification {
       success
@@ -78,7 +78,7 @@ export const SEND_VERIFICATION = gql`
   }
 `;
 
-export const VERIFY_USER = gql`
+export const VERIFY_USER = `
   mutation verifyUser($token: String!) {
     verifyUser(token: $token) {
       success
@@ -86,7 +86,7 @@ export const VERIFY_USER = gql`
   }
 `;
 
-export const RECOVER_USER = gql`
+export const RECOVER_USER = `
   mutation recoverUser($email: String!) {
     recoverUser(email: $email) {
       success
@@ -94,7 +94,7 @@ export const RECOVER_USER = gql`
   }
 `;
 
-export const UPDATE_USER_PASSWORD = gql`
+export const UPDATE_USER_PASSWORD = `
   mutation updateUserPassword(
     $email: String!
     $token: String!

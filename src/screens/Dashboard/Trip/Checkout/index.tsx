@@ -12,7 +12,6 @@ import { useForm } from "@hooks/useForm";
 import useTranslation from "@hooks/useTranslation";
 import { getAuthApolloClient } from "@services/apollo/client";
 import {
-  CardNumberElement,
   useElements,
   useStripe,
 } from "@stripe/react-stripe-js";
@@ -32,12 +31,10 @@ import {
   APPLY_PROMOCODE,
   GENERATE_ORDER,
   ORDER_CREATE_PAYMENTINTENT,
-  ORDER_VALIDATE_PAYMENT,
 } from "@queries/order";
 import { Trip, TripService } from "@typeDefs/destinations";
-import { useMutation } from "@apollo/client";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { calculateReduction } from "@utils/calculateReduction";
-import { ToastContext } from "@context/Toast";
 
 interface Props extends DashboardPage {
   generateOrder: Order;
@@ -49,9 +46,8 @@ const DashboardTripCheckoutPage: NextPage<Props> = ({
 }: Props) => {
   const router = useRouter();
 
-  const { toast } = React.useContext(ToastContext);
 
-  const [order, setOrder] = React.useState<Order>(generateOrder);
+  const [order] = React.useState<Order>(generateOrder);
   const [loading, setLoading] = React.useState<boolean>(false);
 
   const { t: tCommon } = useTranslation("dashboard/common");
@@ -64,7 +60,7 @@ const DashboardTripCheckoutPage: NextPage<Props> = ({
 
   const trip: Trip = order.trip;
 
-  const [promoCodeApplied, setPromoCodeApplied] = useState<boolean>(false);
+  const [promoCodeApplied] = useState<boolean>(false);
 
   const { values: paymentMethodValues, onChange: paymentMethodOnChange } =
     useForm(() => null, {
@@ -75,98 +71,27 @@ const DashboardTripCheckoutPage: NextPage<Props> = ({
       promoCode: order.promoCode ? order.promoCode.code : "",
     });
 
-  const [orderValidatePayment] = useMutation(ORDER_VALIDATE_PAYMENT, {
-    variables: {
-      orderId: order.id,
-      paymentIntentId: "",
-    },
-    async update(_, { data: { orderValidatePayment } }) {
-      if (orderValidatePayment.status === "completed") {
-        setLoading(false);
-        toast(tCheckout("paymentsuccess-title"), "success");
-        router.push(`${ROUTES.DASHBOARD_TRIPS}/${trip.id}/checkout/success`);
-      }
-    },
-  });
+  const [orderCreatePaymentIntent] = useStaticMutation(ORDER_CREATE_PAYMENTINTENT);
 
-  const [orderCreatePaymentIntent] = useMutation(ORDER_CREATE_PAYMENTINTENT, {
-    variables: {
-      orderId: order.id,
-    },
-    async update(_, { data: { orderCreatePaymentIntent: clientSecret } }) {
-      if (!stripe || !elements) return;
-
-      const cardElement = elements.getElement(CardNumberElement);
-
-      if (!cardElement) return;
-
-      const { error, paymentIntent } = await stripe.confirmCardPayment(
-        clientSecret,
-        {
-          payment_method: {
-            card: cardElement,
-            billing_details: {
-              name: paymentMethodValues.name,
-              email: currentUser?.email,
-              phone: currentUser?.phoneNumber,
-            },
-          },
-        }
-      );
-
-      if (error) {
-        toast(tCheckout("payment-failed"), "error");
-        return;
-      } else if (paymentIntent) {
-        if (paymentIntent.status === "succeeded") {
-          await orderValidatePayment({
-            variables: { orderId: order.id, paymentIntentId: paymentIntent.id },
-          });
-        } else if (paymentIntent.status === "requires_action") {
-          if (
-            paymentIntent.next_action &&
-            paymentIntent.next_action.type === "use_stripe_sdk" &&
-            paymentIntent.client_secret
-          ) {
-            const { error } = await stripe.handleCardAction(
-              paymentIntent.client_secret
-            );
-            if (error) {
-              toast(tCheckout("payment-failed"), "error");
-              return;
-            }
-          }
-        }
-      }
-    },
-  });
-
-  const [applyPromoCode] = useMutation(APPLY_PROMOCODE, {
-    update(_, { data: { applyPromoCode } }) {
-      setLoading(false);
-      setPromoCodeApplied(true);
-
-      setOrder(applyPromoCode);
-    },
-    onError() {
-      toast(tCheckout("payment-failed"), "error");
-    },
-    variables: {
-      orderId: order.id,
-      promoCode: paymentMethodValues.promoCode,
-    },
-  });
+  const [applyPromoCode] = useStaticMutation(APPLY_PROMOCODE);
 
   const handleApplyPromoCode = async () => {
     setLoading(true);
-    const { data, errors } = await applyPromoCode();
+    try {
+      const { data } = await applyPromoCode({
+        variables: {
+          orderId: order.id,
+          promoCode: paymentMethodValues.promoCode,
+        },
+      });
 
-    if (errors) {
+      if (data) {
+        return true;
+      }
       return false;
-    } else if (data) {
-      return true;
+    } catch (error) {
+      return false;
     }
-    return false;
   };
 
   const handlePayment = async () => {
@@ -174,7 +99,11 @@ const DashboardTripCheckoutPage: NextPage<Props> = ({
     if (!stripe || !elements) {
       return;
     }
-    orderCreatePaymentIntent();
+    orderCreatePaymentIntent({
+      variables: {
+        orderId: order.id,
+      },
+    });
   };
 
   return (

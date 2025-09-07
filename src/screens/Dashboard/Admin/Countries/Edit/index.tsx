@@ -15,7 +15,7 @@ import { NextPage } from "next";
 import ROUTES from "@constants/routes";
 import DashboardProvider from "@components/Dashboard/Provider";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import {
   DELETE_COUNTRY,
   GET_COUNTRY_BY_SLUG,
@@ -63,7 +63,9 @@ const DestinationEdit: NextPage<Props> = ({
   );
 
   const { values, setValues, onChange, onSubmit } = useForm(
-    () => updateCountry(),
+    () => updateCountry({
+      variables: { ...values, countryId: country.id }
+    }),
     {
       description: {
         en: country.translations.en.description,
@@ -73,26 +75,21 @@ const DestinationEdit: NextPage<Props> = ({
     }
   );
 
-  const [updateCountry] = useMutation(UPDATE_COUNTRY, {
-    variables: { ...values, countryId: country.id },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_COUNTRIES);
-    },
-  });
+  const [updateCountry] = useStaticMutation(UPDATE_COUNTRY);
 
-  const [deleteCountry] = useMutation(DELETE_COUNTRY, {
-    variables: {
-      countryId: country.id,
-    },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_COUNTRIES);
-    },
-  });
+  const [deleteCountry] = useStaticMutation(DELETE_COUNTRY);
 
   const {
     onChange: onChangeCountryServices,
     onSubmit: onSubmitCountryServices,
-  } = useForm(() => updateCountryService(), countryServices);
+  } = useForm(() => updateCountryService({
+    variables: {
+      countryId: country.id,
+      services: countryServices.filter(
+        (service: CountryService) => service.price > 0
+      ),
+    },
+  }), countryServices);
 
   const handleI18nChange = React.useCallback(
     (value: { [key: string]: string }) => {
@@ -124,14 +121,7 @@ const DestinationEdit: NextPage<Props> = ({
     [onChangeCountryServices, countryServices]
   );
 
-  const [updateCountryService] = useMutation(UPDATE_COUNTRY_SERVICES, {
-    variables: {
-      countryId: country.id,
-      services: countryServices.filter(
-        (service: CountryService) => service.price > 0
-      ),
-    },
-  });
+  const [updateCountryService] = useStaticMutation(UPDATE_COUNTRY_SERVICES);
 
   return (
     <DashboardProvider
@@ -141,7 +131,11 @@ const DestinationEdit: NextPage<Props> = ({
         <>
           <DashboardButton
             onClick={() => {
-              deleteCountry();
+              deleteCountry({
+                variables: {
+                  countryId: country.id,
+                }
+              });
             }}
             red
             prefix={<Icon name={"delete-bin"} fill />}

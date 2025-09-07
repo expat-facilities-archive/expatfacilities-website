@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_SERVICES = gql`
+export const GET_SERVICES = `
   query getServices(
     $countryIso2: String
     $checkInDate: String
@@ -32,7 +32,7 @@ export const GET_SERVICES = gql`
   }
 `;
 
-export const GET_SERVICE = gql`
+export const GET_SERVICE = `
   query getService($serviceId: ID!) {
     getService(serviceId: $serviceId) {
       id
@@ -53,7 +53,7 @@ export const GET_SERVICE = gql`
   }
 `;
 
-export const GET_SERVICE_BY_TYPE = gql`
+export const GET_SERVICE_BY_TYPE = `
   query (
     $serviceType: String!
     $countryIso2: String!
@@ -96,7 +96,7 @@ export const GET_SERVICE_BY_TYPE = gql`
   }
 `;
 
-export const UPDATE_SERVICE = gql`
+export const UPDATE_SERVICE = `
   mutation updateService(
     $serviceId: ID!
     $name: String!
@@ -136,13 +136,13 @@ export const UPDATE_SERVICE = gql`
   }
 `;
 
-export const DELETE_SERVICE = gql`
+export const DELETE_SERVICE = `
   mutation deleteService($serviceId: ID!) {
     deleteService(serviceId: $serviceId)
   }
 `;
 
-export const GET_COUNTRYVARIABLE_SERVICES = gql`
+export const GET_COUNTRYVARIABLE_SERVICES = `
   {
     getCountryVariableServices {
       id
@@ -155,7 +155,7 @@ export const GET_COUNTRYVARIABLE_SERVICES = gql`
   }
 `;
 
-export const GET_VARIABLESERVICES_PRICES = gql`
+export const GET_VARIABLESERVICES_PRICES = `
   query getVariableServicesPrices(
     $countryIso2: String!
     $checkInDate: String!
@@ -181,7 +181,7 @@ export const GET_VARIABLESERVICES_PRICES = gql`
   }
 `;
 
-export const CREATE_TRIP_SERVICE = gql`
+export const CREATE_TRIP_SERVICE = `
   mutation createTripService(
     $tripId: ID!
     $serviceId: Int!
@@ -203,7 +203,7 @@ export const CREATE_TRIP_SERVICE = gql`
   }
 `;
 
-export const UPDATE_TRIP_SERVICE = gql`
+export const UPDATE_TRIP_SERVICE = `
   mutation updateTripService(
     $tripServiceId: ID!
     $selectedOffer: String
@@ -223,7 +223,7 @@ export const UPDATE_TRIP_SERVICE = gql`
   }
 `;
 
-export const DELETE_TRIP_SERVICE = gql`
+export const DELETE_TRIP_SERVICE = `
   mutation deleteTripService($tripServiceId: ID!) {
     deleteTripService(tripServiceId: $tripServiceId)
   }

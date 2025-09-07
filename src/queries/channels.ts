@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_CHANNEL = gql`
+export const GET_CHANNEL = `
   query GetChannel($channelId: ID!) {
     getChannel(channelId: $channelId) {
       id
@@ -14,7 +14,7 @@ export const GET_CHANNEL = gql`
   }
 `;
 
-export const GET_USER_CHANNELS = gql`
+export const GET_USER_CHANNELS = `
   query GetUserChannels($userId: ID) {
     getUserChannels(userId: $userId) {
       id
@@ -29,7 +29,7 @@ export const GET_USER_CHANNELS = gql`
   }
 `;
 
-export const RETRIEVE_CHANNEL_MESSAGES = gql`
+export const RETRIEVE_CHANNEL_MESSAGES = `
   query RetrieveChannelMessages($channelId: ID!, $limit: Int) {
     retrieveChannelMessages(channelId: $channelId, limit: $limit) {
       id
@@ -49,7 +49,7 @@ export const RETRIEVE_CHANNEL_MESSAGES = gql`
   }
 `;
 
-export const SEND_CHANNEL_MESSAGE = gql`
+export const SEND_CHANNEL_MESSAGE = `
   mutation SendChannelMessage($channelMessageInput: ChannelMessageInput!) {
     sendChannelMessage(channelMessageInput: $channelMessageInput) {
       id

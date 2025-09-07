@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_REGIONS = gql`
+export const GET_REGIONS = `
   {
     getRegions {
       id

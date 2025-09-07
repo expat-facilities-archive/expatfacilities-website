@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 import ROUTES from "@constants/routes";
 import DashboardProvider from "@components/Dashboard/Provider";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { DashboardPage } from "@typeDefs/auth";
 import { CREATE_PROMOCODE } from "@queries/promo-code";
 import { formatDate } from "@utils/formatDate";
@@ -26,7 +26,14 @@ const DashboardPromoCodesAdd: NextPage<Props> = ({ currentUser }: Props) => {
   const router = useRouter();
 
   const createPromoCodeCallback = async () => {
-    createPromoCode();
+    createPromoCode({
+      variables: {
+        promoCodeInput: {
+          ...values,
+          discount: parseFloat(values.discount),
+        },
+      }
+    });
   };
 
   const expirationDatePrevision = new Date();
@@ -39,17 +46,7 @@ const DashboardPromoCodesAdd: NextPage<Props> = ({ currentUser }: Props) => {
     expirationDate: formatDate(expirationDatePrevision),
   });
 
-  const [createPromoCode] = useMutation(CREATE_PROMOCODE, {
-    variables: {
-      promoCodeInput: {
-        ...values,
-        discount: parseFloat(values.discount),
-      },
-    },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_PROMOCODES);
-    },
-  });
+  const [createPromoCode] = useStaticMutation(CREATE_PROMOCODE);
 
   return (
     <DashboardProvider

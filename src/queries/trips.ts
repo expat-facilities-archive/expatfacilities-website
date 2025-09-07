@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_TRIPS = gql`
+export const GET_TRIPS = `
   {
     getTrips {
       id
@@ -34,7 +34,7 @@ export const GET_TRIPS = gql`
   }
 `;
 
-export const GET_TRIP = gql`
+export const GET_TRIP = `
   query ($tripId: ID!) {
     getTrip(tripId: $tripId) {
       id
@@ -82,7 +82,7 @@ export const GET_TRIP = gql`
   }
 `;
 
-export const GET_CURRENT_USER_TRIPS = gql`
+export const GET_CURRENT_USER_TRIPS = `
   query getCurrentUserTrips($sort: SortOptions) {
     getCurrentUserTrips(sortOptions: $sort) {
       id
@@ -116,7 +116,7 @@ export const GET_CURRENT_USER_TRIPS = gql`
   }
 `;
 
-export const GET_USER_TRIPS = gql`
+export const GET_USER_TRIPS = `
   query ($id: ID!) {
     getUserTrips(id: $id) {
       id
@@ -155,7 +155,7 @@ export const GET_USER_TRIPS = gql`
   }
 `;
 
-export const CREATE_TRIP = gql`
+export const CREATE_TRIP = `
   mutation createTrip(
     $city: ID!
     $services: [Int]!
@@ -181,7 +181,7 @@ export const CREATE_TRIP = gql`
   }
 `;
 
-export const UPDATE_TRIP = gql`
+export const UPDATE_TRIP = `
   mutation updateTrip(
     $tripId: ID!
     $city: ID!
@@ -209,13 +209,13 @@ export const UPDATE_TRIP = gql`
   }
 `;
 
-export const STATE_TRANSITION_SEND_TRIP = gql`
+export const STATE_TRANSITION_SEND_TRIP = `
   mutation Mutation($tripId: ID!, $transition: String!) {
     tripSendState(tripId: $tripId, transition: $transition)
   }
 `;
 
-export const DELETE_TRIP = gql`
+export const DELETE_TRIP = `
   mutation deleteTrip($tripId: ID!) {
     deleteTrip(tripId: $tripId)
   }

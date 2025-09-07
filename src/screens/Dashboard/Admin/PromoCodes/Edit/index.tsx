@@ -13,7 +13,7 @@ import { NextPage } from "next";
 import ROUTES from "@constants/routes";
 import DashboardProvider from "@components/Dashboard/Provider";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import router from "next/router";
 import { getStandaloneApolloClient } from "@services/apollo/client";
 import { DashboardPage } from "@typeDefs/auth";
@@ -35,34 +35,24 @@ const DashboardPromoCodeEdit: NextPage<Props> = ({
   currentUser,
   promoCode,
 }: Props) => {
-  const { values, onChange, onSubmit } = useForm(() => updatePromoCode(), {
-    code: promoCode.code,
-    discount: promoCode.discount,
-    active: promoCode.active,
-    expirationDate: formatDate(promoCode.expirationDate),
-  });
-
-  const [updatePromoCode] = useMutation(UPDATE_PROMOCODE, {
+  const { values, onChange, onSubmit } = useForm(() => updatePromoCode({
     variables: {
       id: promoCode.id,
       promoCodeInput: {
         ...values,
         discount: parseFloat(values.discount),
       },
-    },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_PROMOCODES);
-    },
+    }
+  }), {
+    code: promoCode.code,
+    discount: promoCode.discount,
+    active: promoCode.active,
+    expirationDate: formatDate(promoCode.expirationDate),
   });
 
-  const [deletePromoCode] = useMutation(DELETE_PROMOCODE, {
-    variables: {
-      promoCodeId: promoCode.id,
-    },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_PROMOCODES);
-    },
-  });
+  const [updatePromoCode] = useStaticMutation(UPDATE_PROMOCODE);
+
+  const [deletePromoCode] = useStaticMutation(DELETE_PROMOCODE);
 
   return (
     <DashboardProvider
@@ -72,7 +62,11 @@ const DashboardPromoCodeEdit: NextPage<Props> = ({
         <>
           <DashboardButton
             onClick={() => {
-              deletePromoCode();
+              deletePromoCode({
+                variables: {
+                  promoCodeId: promoCode.id,
+                }
+              });
             }}
             mode={"red"}
             prefix={<Icon name={"delete-bin"} fill />}

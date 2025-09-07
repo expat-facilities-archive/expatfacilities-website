@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_ORDER = gql`
+export const GET_ORDER = `
   query getOrder($orderId: ID!) {
     getOrder(orderId: $orderId) {
       id
@@ -17,7 +17,7 @@ export const GET_ORDER = gql`
   }
 `;
 
-export const GET_ORDER_BY_TRIP_ID = gql`
+export const GET_ORDER_BY_TRIP_ID = `
   query getOrderByTripId($tripId: ID!) {
     getOrderByTripId(tripId: $tripId) {
       id
@@ -38,7 +38,7 @@ export const GET_ORDER_BY_TRIP_ID = gql`
   }
 `;
 
-export const GENERATE_ORDER = gql`
+export const GENERATE_ORDER = `
   mutation GenerateOrder($tripId: ID!) {
     generateOrder(tripId: $tripId) {
       id
@@ -77,7 +77,7 @@ export const GENERATE_ORDER = gql`
   }
 `;
 
-export const APPLY_PROMOCODE = gql`
+export const APPLY_PROMOCODE = `
   mutation ApplyPromoCode($orderId: ID!, $promoCode: String!) {
     applyPromoCode(id: $orderId, promoCode: $promoCode) {
       id
@@ -116,13 +116,13 @@ export const APPLY_PROMOCODE = gql`
   }
 `;
 
-export const ORDER_CREATE_PAYMENTINTENT = gql`
+export const ORDER_CREATE_PAYMENTINTENT = `
   mutation OrderCreatePaymentIntent($orderId: ID!) {
     orderCreatePaymentIntent(id: $orderId)
   }
 `;
 
-export const ORDER_VALIDATE_PAYMENT = gql`
+export const ORDER_VALIDATE_PAYMENT = `
   mutation OrderValidatePayment($orderId: ID!, $paymentIntentId: String!) {
     orderValidatePayment(orderId: $orderId, paymentIntentId: $paymentIntentId) {
       id

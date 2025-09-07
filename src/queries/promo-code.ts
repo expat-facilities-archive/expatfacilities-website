@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_PROMOCODES = gql`
+export const GET_PROMOCODES = `
   query {
     getPromoCodes {
       id
@@ -14,7 +14,7 @@ export const GET_PROMOCODES = gql`
   }
 `;
 
-export const GET_PROMOCODE = gql`
+export const GET_PROMOCODE = `
   query getPromoCode($promoCodeId: ID!) {
     getPromoCode(promoCodeId: $promoCodeId) {
       id
@@ -28,7 +28,7 @@ export const GET_PROMOCODE = gql`
   }
 `;
 
-export const GET_PROMOCODE_BY_CODE = gql`
+export const GET_PROMOCODE_BY_CODE = `
   query getPromoCodeByCode($code: String!) {
     getPromoCodeByCode(code: $code) {
       id
@@ -42,7 +42,7 @@ export const GET_PROMOCODE_BY_CODE = gql`
   }
 `;
 
-export const CREATE_PROMOCODE = gql`
+export const CREATE_PROMOCODE = `
   mutation createPromoCode($promoCodeInput: PromoCodeInput) {
     createPromoCode(promoCodeInput: $promoCodeInput) {
       id
@@ -56,7 +56,7 @@ export const CREATE_PROMOCODE = gql`
   }
 `;
 
-export const UPDATE_PROMOCODE = gql`
+export const UPDATE_PROMOCODE = `
   mutation updatePromoCode($id: ID!, $promoCodeInput: PromoCodeInput) {
     updatePromoCode(id: $id, promoCodeInput: $promoCodeInput) {
       id
@@ -70,7 +70,7 @@ export const UPDATE_PROMOCODE = gql`
   }
 `;
 
-export const DELETE_PROMOCODE = gql`
+export const DELETE_PROMOCODE = `
   mutation deletePromoCode($promoCodeId: ID!) {
     deletePromoCode(promoCodeId: $promoCodeId)
   }

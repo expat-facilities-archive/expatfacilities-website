@@ -27,7 +27,7 @@ import useBreakpoint from "@hooks/useBreakpoint";
 import TripServicesList from "@components/Dashboard/Trip/ServicesList";
 import DashboardTripTip from "@components/Dashboard/Trip/Tip";
 import DashboardTripDetailsCard from "@components/Dashboard/Trip/DetailsCard";
-import { useMutation } from "@apollo/client";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import useModal from "@hooks/useModal";
 import Modal from "@components/Layout/Modal";
 import TripStateProgression from "@components/Dashboard/Trip/StateProgression";
@@ -68,17 +68,19 @@ const TripEdit: NextPage<Props> = ({ currentUser, trip }: Props) => {
   //   services: [],
   // });
 
-  const [handleCancelTrip] = useMutation(STATE_TRANSITION_SEND_TRIP, {
-    update() {
-      router.push(`${ROUTES.DASHBOARD_TRIPS}/${trip.id}`);
-    },
-    variables: {
-      tripId: trip.id,
-      transition: "cancel",
-    },
-  });
+  const [cancelTripMutation] = useStaticMutation(STATE_TRANSITION_SEND_TRIP);
 
-  // const [handleUpdateTrip] = useMutation(UPDATE_TRIP, {
+  const handleCancelTrip = async () => {
+    await cancelTripMutation({
+      variables: {
+        tripId: trip.id,
+        transition: "cancel",
+      },
+    });
+    router.push(`${ROUTES.DASHBOARD_TRIPS}/${trip.id}`);
+  };
+
+  // const [handleUpdateTrip] = useStaticMutation(UPDATE_TRIP, {
   //   variables: { ...values, tripId: trip.id },
   //   update() {
   //     router.push(`${ROUTES.DASHBOARD_TRIPS}/${trip.id}`);
@@ -88,7 +90,7 @@ const TripEdit: NextPage<Props> = ({ currentUser, trip }: Props) => {
   //   },
   // });
 
-  // const [handleDeleteTrip] = useMutation(DELETE_TRIP, {
+  // const [handleDeleteTrip] = useStaticMutation(DELETE_TRIP, {
   //   variables: { tripId: trip.id },
   //   update() {
   //     router.push(ROUTES.DASHBOARD_TRIPS);

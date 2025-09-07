@@ -12,7 +12,7 @@ import router from "next/router";
 import ROUTES from "@constants/routes";
 import DashboardProvider from "@components/Dashboard/Provider";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { GET_COUNTRY_BY_SLUG } from "src/queries/countries";
 import { Country } from "@typeDefs/destinations";
 import { getStandaloneApolloClient } from "@services/apollo/client";
@@ -62,11 +62,7 @@ const DestinationCityAdd: NextPage<Props> = ({
     [cities, values]
   );
 
-  const [createCity] = useMutation(CREATE_CITY, {
-    update() {
-      router.push(`${ROUTES.DASHBOARD_ADMIN_COUNTRIES}/${country.slug}`);
-    },
-  });
+  const [createCity] = useStaticMutation(CREATE_CITY);
 
   return (
     <DashboardProvider

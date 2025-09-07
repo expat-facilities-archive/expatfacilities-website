@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_COUNTRIES = gql`
+export const GET_COUNTRIES = `
   query ($query: String) {
     getCountries(query: $query) {
       id
@@ -24,7 +24,7 @@ export const GET_COUNTRIES = gql`
   }
 `;
 
-export const GET_RANDOM_COUNTRIES = gql`
+export const GET_RANDOM_COUNTRIES = `
   query ($amount: Int!) {
     getRandomCountries(amount: $amount) {
       id
@@ -42,7 +42,7 @@ export const GET_RANDOM_COUNTRIES = gql`
   }
 `;
 
-export const GET_COUNTRY_SUGGESTIONS = gql`
+export const GET_COUNTRY_SUGGESTIONS = `
   query ($countryId: ID!, $amount: Int!) {
     getCountrySuggestions(countryId: $countryId, amount: $amount) {
       id
@@ -61,7 +61,7 @@ export const GET_COUNTRY_SUGGESTIONS = gql`
   }
 `;
 
-export const GET_COUNTRY = gql`
+export const GET_COUNTRY = `
   query ($countryId: ID!) {
     getCountry(countryId: $countryId) {
       id
@@ -73,7 +73,7 @@ export const GET_COUNTRY = gql`
   }
 `;
 
-export const GET_COUNTRY_BY_SLUG = gql`
+export const GET_COUNTRY_BY_SLUG = `
   query ($countrySlug: String!) {
     getCountryBySlug(countrySlug: $countrySlug) {
       id
@@ -100,7 +100,7 @@ export const GET_COUNTRY_BY_SLUG = gql`
   }
 `;
 
-export const GET_COUNTRY_BY_ISO2 = gql`
+export const GET_COUNTRY_BY_ISO2 = `
   query ($iso2: String!) {
     getCountryByIso2(iso2: $iso2) {
       id
@@ -116,7 +116,7 @@ export const GET_COUNTRY_BY_ISO2 = gql`
   }
 `;
 
-export const GET_COUNTRY_BY_ISO3 = gql`
+export const GET_COUNTRY_BY_ISO3 = `
   query ($iso3: String!) {
     getCountryByIso2(iso3: $iso3) {
       id
@@ -132,7 +132,7 @@ export const GET_COUNTRY_BY_ISO3 = gql`
   }
 `;
 
-export const CREATE_COUNTRY = gql`
+export const CREATE_COUNTRY = `
   mutation createCountry(
     $slug: String!
     $name: String!
@@ -180,7 +180,7 @@ export const CREATE_COUNTRY = gql`
   }
 `;
 
-export const UPDATE_COUNTRY = gql`
+export const UPDATE_COUNTRY = `
   mutation updateCountry(
     $countryId: ID!
     $description: JSON!
@@ -214,7 +214,7 @@ export const UPDATE_COUNTRY = gql`
   }
 `;
 
-export const UPDATE_COUNTRY_SERVICES = gql`
+export const UPDATE_COUNTRY_SERVICES = `
   mutation updateCountryServices(
     $countryId: ID!
     $services_prices: [CountryServiceInput!]!
@@ -229,7 +229,7 @@ export const UPDATE_COUNTRY_SERVICES = gql`
   }
 `;
 
-export const DELETE_COUNTRY = gql`
+export const DELETE_COUNTRY = `
   mutation deleteCountry($countryId: ID!) {
     deleteCountry(countryId: $countryId)
   }

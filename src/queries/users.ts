@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_CURRENT_USER = gql`
+export const GET_CURRENT_USER = `
   query {
     getCurrentUser {
       id
@@ -17,7 +17,7 @@ export const GET_CURRENT_USER = gql`
   }
 `;
 
-export const GET_USERS = gql`
+export const GET_USERS = `
   query {
     getUsers {
       id
@@ -35,7 +35,7 @@ export const GET_USERS = gql`
   }
 `;
 
-export const GET_USER = gql`
+export const GET_USER = `
   query ($id: ID!) {
     getUser(id: $id) {
       id
@@ -53,7 +53,7 @@ export const GET_USER = gql`
   }
 `;
 
-export const UPDATE_USER = gql`
+export const UPDATE_USER = `
   mutation updateUser(
     $email: String!
     $firstName: String!
@@ -82,7 +82,7 @@ export const UPDATE_USER = gql`
   }
 `;
 
-export const DEACTIVATE_USER = gql`
+export const DEACTIVATE_USER = `
   mutation deactivateUser($userId: ID!) {
     deactivateUser(userId: $userId) {
       id
@@ -90,7 +90,7 @@ export const DEACTIVATE_USER = gql`
   }
 `;
 
-export const DELETE_USER = gql`
+export const DELETE_USER = `
   mutation deleteUser($userId: ID!) {
     deleteUser(userId: $userId)
   }

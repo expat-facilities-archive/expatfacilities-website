@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_WORLD_COUNTRIES = gql`
+export const GET_WORLD_COUNTRIES = `
   query getWorldCountries {
     getWorldCountries {
       id
@@ -23,7 +23,7 @@ export const GET_WORLD_COUNTRIES = gql`
   }
 `;
 
-export const GET_COUNTRIES_CITIES_BY_ISO2 = gql`
+export const GET_COUNTRIES_CITIES_BY_ISO2 = `
   query getCountriesCitiesByIso2($iso2: String!) {
     getCountriesCitiesByIso2(iso2: $iso2) {
       id

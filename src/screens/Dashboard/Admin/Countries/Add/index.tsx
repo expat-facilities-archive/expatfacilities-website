@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 import ROUTES from "@constants/routes";
 import DashboardProvider from "@components/Dashboard/Provider";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { CREATE_COUNTRY } from "src/queries/countries";
 import { ChangeEvent, useCallback } from "react";
 import { DashboardPage } from "@typeDefs/auth";
@@ -36,7 +36,9 @@ const DestinationAdd: NextPage<Props> = ({ currentUser, countries }: Props) => {
   const router = useRouter();
 
   const createCountryCallback = async () => {
-    createCountry();
+    createCountry({
+      variables: values
+    });
   };
 
   const { values, onChange, onSubmit } = useForm(createCountryCallback, {
@@ -75,12 +77,7 @@ const DestinationAdd: NextPage<Props> = ({ currentUser, countries }: Props) => {
     [countries, values]
   );
 
-  const [createCountry] = useMutation(CREATE_COUNTRY, {
-    variables: values,
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_COUNTRIES);
-    },
-  });
+  const [createCountry] = useStaticMutation(CREATE_COUNTRY);
   const { t: tCountry } = useTranslation("data/countries", false);
 
   return (

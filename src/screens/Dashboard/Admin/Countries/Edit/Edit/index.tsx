@@ -11,7 +11,7 @@ import { NextPage } from "next";
 import ROUTES from "@constants/routes";
 import DashboardProvider from "@components/Dashboard/Provider";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { City, Country } from "@typeDefs/destinations";
 import router from "next/router";
 import { getStandaloneApolloClient } from "@services/apollo/client";
@@ -31,7 +31,9 @@ const DestinationCityEdit: NextPage<Props> = ({
   const country: Country = city.country;
 
   const updateCityCallback = () => {
-    updateCity();
+    updateCity({
+      variables: { ...values, cityId: city.id, countryId: country.id }
+    });
   };
 
   const { values, onChange, onSubmit } = useForm(updateCityCallback, {
@@ -39,21 +41,9 @@ const DestinationCityEdit: NextPage<Props> = ({
     name: city.name,
   });
 
-  const [updateCity] = useMutation(UPDATE_CITY, {
-    variables: { ...values, cityId: city.id, countryId: country.id },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_COUNTRIES);
-    },
-  });
+  const [updateCity] = useStaticMutation(UPDATE_CITY);
 
-  const [deleteCity] = useMutation(DELETE_CITY, {
-    variables: {
-      cityId: city.id,
-    },
-    update() {
-      router.push(ROUTES.DASHBOARD_ADMIN_COUNTRIES);
-    },
-  });
+  const [deleteCity] = useStaticMutation(DELETE_CITY);
 
   return (
     <DashboardProvider
@@ -63,7 +53,11 @@ const DestinationCityEdit: NextPage<Props> = ({
         <>
           <DashboardButton
             onClick={() => {
-              deleteCity();
+              deleteCity({
+                variables: {
+                  cityId: city.id,
+                }
+              });
             }}
             red
             prefix={<Icon name={"delete-bin"} fill />}

@@ -4,8 +4,6 @@ import type { Service, ServiceType } from "@typeDefs/services";
 import { TripService } from "@typeDefs/destinations";
 import { useStaticMutation } from "@hooks/useStaticQuery";
 import { CREATE_TRIP_SERVICE, UPDATE_TRIP_SERVICE } from "@queries/services";
-import { useRouter } from "next/router";
-import ROUTES from "@constants/routes";
 import AmbassadorServiceForm from "./Ambassador";
 import TransportationServiceForm from "./Transportation";
 import VisaServiceForm from "./Visa";
@@ -46,7 +44,6 @@ const TripServiceForm: React.FC<Props> = ({
   mode,
   setTotalAmount,
 }: Props) => {
-  const router = useRouter();
   const [_, setLoading] = React.useState<boolean>(false);
 
   const handleSubmit = (data: any) => {

@@ -5,7 +5,6 @@ import { City, Country } from "@typeDefs/destinations";
 import Cookies from "js-cookie";
 import React from "react";
 import styled from "styled-components";
-import gql from "graphql-tag";
 
 interface Props {
   location: {
@@ -234,7 +233,7 @@ const CardDescription = styled.span<{ marginLeft?: boolean }>`
   ${({ marginLeft }) => marginLeft && "margin-left: 4px;"};
 `;
 
-const RESULT_LIST_QUERY = gql`
+const RESULT_LIST_QUERY = `
   query ResultListQuery {
     getCities {
       id

@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const CREATE_PAYMENT_INTENT = gql`
+export const CREATE_PAYMENT_INTENT = `
   mutation CreatePaymentIntent($totalAmount: Float!, $currency: String!) {
     createPaymentIntent(totalAmount: $totalAmount, currency: $currency) {
       client_secret
@@ -9,7 +9,7 @@ export const CREATE_PAYMENT_INTENT = gql`
   }
 `;
 
-export const CREATE_CHECKOUT_SESSION = gql`
+export const CREATE_CHECKOUT_SESSION = `
   mutation createCheckoutSession($tripId: ID!, $tripServicesId: [ID!]!) {
     createCheckoutSession(tripId: $tripId, tripServicesId: $tripServicesId) {
       id

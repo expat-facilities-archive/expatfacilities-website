@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+// Removed gql import for static implementation
 
-export const GET_CITIES = gql`
+export const GET_CITIES = `
   query getCities {
     getCities {
       id
@@ -17,7 +17,7 @@ export const GET_CITIES = gql`
   }
 `;
 
-export const GET_CITIES_WITH_COUNTRY_ID = gql`
+export const GET_CITIES_WITH_COUNTRY_ID = `
   query ($countryId: ID!) {
     getCitiesWithCountryId(countryId: $countryId) {
       id
@@ -27,7 +27,7 @@ export const GET_CITIES_WITH_COUNTRY_ID = gql`
   }
 `;
 
-export const GET_CITY_BY_SLUG = gql`
+export const GET_CITY_BY_SLUG = `
   query ($slug: String!) {
     getCityBySlug(slug: $slug) {
       id
@@ -42,7 +42,7 @@ export const GET_CITY_BY_SLUG = gql`
   }
 `;
 
-export const CREATE_CITY = gql`
+export const CREATE_CITY = `
   mutation createCity(
     $countryId: String!
     $slug: String!
@@ -69,7 +69,7 @@ export const CREATE_CITY = gql`
   }
 `;
 
-export const UPDATE_CITY = gql`
+export const UPDATE_CITY = `
   mutation updateCity(
     $cityId: ID!
     $countryId: String!
@@ -89,7 +89,7 @@ export const UPDATE_CITY = gql`
   }
 `;
 
-export const DELETE_CITY = gql`
+export const DELETE_CITY = `
   mutation deleteCity($cityId: ID!) {
     deleteCity(cityId: $cityId)
   }

@@ -17,7 +17,7 @@ import {
 import ROUTES from "@constants/routes";
 import React from "react";
 import { useForm } from "@hooks/useForm";
-import { useMutation } from "@apollo/react-hooks";
+import { useStaticMutation } from "@hooks/useStaticQuery";
 import { RECOVER_USER } from "@queries/auth";
 import Field from "@components/Auth/Form/Field";
 import REGEX from "@constants/regex";
@@ -40,24 +40,16 @@ const Recovery: NextPage<Props> = ({ query, backgroundUrl }: Props) => {
   });
 
   const recoverCallback = () => {
-    recover();
+    recover({
+      variables: values
+    });
   };
 
   const { onChange, onSubmit, values, valid } = useForm(recoverCallback, {
     email: query.email || "",
   });
 
-  const [recover, { loading }] = useMutation(RECOVER_USER, {
-    update(_, { data }) {
-      setSuccess(data?.recoverUser.success);
-    },
-    onError(err) {
-      setErrors({
-        email: err.graphQLErrors[0].message,
-      });
-    },
-    variables: values,
-  });
+  const [recover, { loading }] = useStaticMutation(RECOVER_USER);
 
   const handleClick = () => {
     openMailbox(values.email);
