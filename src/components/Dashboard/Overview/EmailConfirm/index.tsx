@@ -18,7 +18,6 @@ interface Props {
 const EmailConfirm: React.FC<Props> = ({ email }: Props) => {
   const router = useRouter();
 
-
   const [verification] = React.useState(false);
 
   const [handleResend, { loading }] = useStaticMutation(SEND_VERIFICATION);
@@ -26,7 +25,7 @@ const EmailConfirm: React.FC<Props> = ({ email }: Props) => {
 
   const handleResendCallback = async () => {
     await handleResend({
-      variables: {}
+      variables: {},
     });
   };
 
@@ -55,7 +54,7 @@ const EmailConfirm: React.FC<Props> = ({ email }: Props) => {
     handleVerify({
       variables: {
         token: router.query?.verify as string,
-      }
+      },
     });
     return (
       <Container>

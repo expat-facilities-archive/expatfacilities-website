@@ -20,7 +20,7 @@ type Props = {
 const DestinationServiceForm: React.FC<Props> = ({ data }: Props) => {
   const updateCountryServiceCallback = () => {
     updateCountryService({
-      variables: { ...values }
+      variables: { ...values },
     });
   };
 

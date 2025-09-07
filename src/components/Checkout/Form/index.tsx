@@ -28,10 +28,7 @@ type Props = {
   theme: Theme & MainTheme;
 };
 
-const CheckoutForm: React.FC<Props> = ({
-  totalAmount,
-  theme,
-}: Props) => {
+const CheckoutForm: React.FC<Props> = ({ totalAmount, theme }: Props) => {
   const [isSubmitable, setSubmitable] = useState<boolean>(false);
   const [promoCodeLoading, setPromoCodeLoading] = useState<boolean>(false);
   const [promoCode, setPromoCode] = useState<PromoCode | null>(null);
@@ -114,7 +111,6 @@ const CheckoutForm: React.FC<Props> = ({
       });
   }, [finalPrice, totalAmount, values]);
 
-
   const [createPaymentIntent] = useStaticMutation(CREATE_PAYMENT_INTENT);
 
   const handlePaymentSubmit = useCallback(async () => {
@@ -126,9 +122,9 @@ const CheckoutForm: React.FC<Props> = ({
       variables: {
         totalAmount: finalPrice,
         currency: "eur",
-      }
+      },
     });
-  }, [createPaymentIntent]);
+  }, [createPaymentIntent, finalPrice]);
 
   return (
     <CheckoutFormContainer>

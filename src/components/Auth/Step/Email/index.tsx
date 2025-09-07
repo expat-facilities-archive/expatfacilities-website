@@ -45,7 +45,6 @@ const AuthStepEmail: React.FC<Props> = ({ setStep, setUser, user }: Props) => {
 
   const [loading, setLoading] = React.useState(false);
 
-
   const handleForm = async (
     external = false,
     token?: {
@@ -57,7 +56,6 @@ const AuthStepEmail: React.FC<Props> = ({ setStep, setUser, user }: Props) => {
     if (!external) {
       // For static demo, simulate user email check
       const mockData = { getUserEmail: { success: false } };
-      
       setLoading(false);
 
       if (mockData.getUserEmail.success) {
@@ -68,7 +66,7 @@ const AuthStepEmail: React.FC<Props> = ({ setStep, setUser, user }: Props) => {
     } else if (external) {
       if (token && token.type === "google") {
         // For static demo, simulate Google login
-        console.log('Google login with token:', token.accessToken);
+        console.log("Google login with token:", token.accessToken);
         setLoading(false);
         setStep(authStep.SIGN_UP_IDENTITY);
         return;
@@ -88,11 +86,11 @@ const AuthStepEmail: React.FC<Props> = ({ setStep, setUser, user }: Props) => {
   };
 
   const handleFacebookSuccess = (response: ProfileSuccessResponse) => {
-    console.log('Facebook login success:', response);
+    console.log("Facebook login success:", response);
   };
 
   const handleFacebookFailure = (error: FailResponse) => {
-    console.log('Facebook login failed:', error);
+    console.log("Facebook login failed:", error);
   };
 
   return (

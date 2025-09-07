@@ -64,7 +64,7 @@ const CreditCardForm: React.FC<Props> = ({
     cvc: "",
   });
   const [focus, setFocus] = useState<Focused | undefined>(undefined);
-  const [_valid, setValid] = useState<boolean>(true);
+  const [, setValid] = useState<boolean>(true);
 
   const handleFocus = (focusOn: Focused | undefined) => {
     setFocus(focusOn);
@@ -187,7 +187,6 @@ const CreditCardForm: React.FC<Props> = ({
 const Container = styled.div`
   max-width: 425px;
 `;
-
 
 const CreditCardFieldGroup = styled(DashboardFieldGroup)`
   padding: 0;

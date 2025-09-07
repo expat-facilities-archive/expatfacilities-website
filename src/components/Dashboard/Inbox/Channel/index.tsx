@@ -61,12 +61,15 @@ const Channel: React.FC<ChannelProps> = ({ id, sender }: ChannelProps) => {
     },
   });
 
-  const retrieveChannelMessagesQuery = useStaticQuery(RETRIEVE_CHANNEL_MESSAGES, {
-    variables: {
-      channelId: id,
-      limit: 30,
-    },
-  });
+  const retrieveChannelMessagesQuery = useStaticQuery(
+    RETRIEVE_CHANNEL_MESSAGES,
+    {
+      variables: {
+        channelId: id,
+        limit: 30,
+      },
+    }
+  );
 
   const scrollToBottom = () => {
     if (channelContentContainerRef.current) {

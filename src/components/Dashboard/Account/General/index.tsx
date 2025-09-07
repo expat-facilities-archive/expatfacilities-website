@@ -34,7 +34,7 @@ const AccountGeneral: React.FC<Props> = ({ user }: Props) => {
 
   const updateUserCallback = () => {
     updateUser({
-      variables: values
+      variables: values,
     });
   };
 
@@ -48,12 +48,14 @@ const AccountGeneral: React.FC<Props> = ({ user }: Props) => {
     }
   );
 
-  const [updateUser, { loading: loadingUpdateUser }] = useStaticMutation(UPDATE_USER);
+  const [updateUser, { loading: loadingUpdateUser }] =
+    useStaticMutation(UPDATE_USER);
 
-  const [deactivateUser, { loading: loadingDeactivateUser }] = useStaticMutation(DEACTIVATE_USER);
+  const [deactivateUser, { loading: loadingDeactivateUser }] =
+    useStaticMutation(DEACTIVATE_USER);
   const submit = React.useCallback(() => {
     deactivateUser({
-      variables: { userId: user.id }
+      variables: { userId: user.id },
     });
     close();
   }, [close, deactivateUser, user.id]);

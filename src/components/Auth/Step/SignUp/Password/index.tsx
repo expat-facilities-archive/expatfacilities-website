@@ -46,7 +46,7 @@ const AuthStepSignUpPassword: React.FC<Props> = ({ user, setStep }: Props) => {
       variables: {
         ...values,
         ...user,
-      }
+      },
     });
   };
 
