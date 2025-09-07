@@ -1,0 +1,76 @@
+{
+    "head": {
+        "title": "Services",
+        "description": "Viens découvrir les services Expat Facilities !"
+    },
+    "title": "Voir le détail de notre accompagnement",
+    "subtitle": "Renseigne toi sur toutes nos actions avant de faire ta sélection pour partir à l'étranger",
+    "list":{
+        "title": "Choisis le(s) service(s) qu'il te faut.",
+        "subtitle": "Documente-toi avant de commencer l'aventure !",
+        "visa": {
+            "name": "Visa",
+            "p1": "La création de Visa est malheureusement souvent fastidieuse. Expat Facilities s'occupe de tout pour toi afin d'obtenir un visa dans les meilleurs délais à notre partenaire RapideVisa",
+            "p2": "Pour effectuer ta demande, c’est très simple ! Il te suffit d’ajouter le service à ton panier et de fournir les renseignements nécessaires. Certains documents pourront être à envoyer par la poste car ils nécessitent d’être en version physique comme ton passeport.Attention, certains consulats souhaitent que ce soit la personne elle-même qui effectue la demande de visa (Uruguay, Argentine…)",
+            "p3": "Cependant, nous te guiderons du début jusqu’à la fin."
+        },
+        "housing": {
+            "name": "Logement",
+            "p1": "Expat Facilities s’engage à te trouver et à contracter totalement ton logement dans ton pays d’accueil.",
+            "p2": "Grâce à nos 200 partenaires à travers le monde, nous te garantissons une recherche rapide et adaptée à tes besoins afin que tu puisses partir en échange l’esprit léger. Au cours de cette recherche, trois propositions te seront faites.",
+            "p3": "Un vrai suivi personnel sera instauré avec le pôle international pour échanger avec toi sur le suivi de ta demande et des visites de l’appartement en visioconférence pourront être organisées grâce à nos ambassadeurs* directement présents sur place. Rechercher un logement n'aura jamais été aussi simple. Avec Expat Facilities, tu n’as qu’à mettre le service logement dans ton panier et suivre le processus de demande.",
+            "p4": "*service payant"
+        },
+        "ambasador": {
+            "name": "Ambassadeur",
+            "p1": "Un ambassadeur est un étudiant, comme toi, qui t’accompagne et te guide dans toutes tes démarches au sein de ton pays d’accueil ! Nous savons qu’il peut parfois être difficile de se retrouver seul dans un pays que l’on ne connaît pas. Il était essentiel pour nous de remédier à ce problème en créant des liens sociaux grâce à nos ambassadeurs.",
+            "p2": "il sera aussi là pour t’aider dans  la finalisation de ton installation et démarches administratives (création d’un compte bancaire, ouverture d’une ligne téléphonique et internet, obtention de ton pass transport ,état des lieux de ton logement).",
+            "p3": "Il est pour toi un vrai repère pour t'intégrer au mieux dans ton pays d’accueil. Il te fera bénéficier de ses informations incontournables et de ses précieux conseils comme les meilleures adresses locales.",
+            "p4": "Tu pourras découvrir ton ambassadeur à travers sa présentation sur notre site."
+        },
+        "transport": {
+            "name": "Transport",
+            "p4": "Expat Facilities t’organise ton déplacement jusqu’à ton pays d’accueil ! Avion, Train, Taxi, Bus, Tramway tout est choisi dans les moindres détails. Grâce à notre partenariat avec la compagnie Lufthansa, on pourra te proposer des prix préférentiels et une offre avec deux bagages en soute. Si tu souhaites ajouter des options telles qu’une escale, première classe… c’est possible ! Nous proposons une offre personnalisée et adaptée à chacun. Il est essentiel pour nous de faciliter votre expatriation à travers nos services. Confie-nous ton voyage ! Donne-nous ton point de départ et ton point d'arrivée, nos équipes se chargent de t’organiser tous les moyens de locomotion nécessaires pour arriver jusqu’à ton logement d’accueil en toute sécurité. Pars l’esprit tranquille en réservant ton accompagnement."
+        },
+        "internship": {
+            "name": "Stage",
+            "p1": "Tu cherches un stage à l’étranger et tu ne sais pas par où commencer ? ",
+            "p2": "Solliciter Expat Facilities pour trouver un stage à l’étranger, c’est avoir accès à une multitude d’offres exclusives : de stages d’ingénieurs, de communication, de graphisme, de finance ou de marketing. Finis le temps de recherches interminables. Avec Expat Facilities tu es sûr(e) de repartir avec un stage qui te correspond et souvent rémunéré. Ce service peut être amené à être payant selon les offres.",
+            "p3": "👉 Comment postuler ? ",
+            "p4": "-Crée ton compte Expat Facilities (lien qui redirige vers la création de compte)",
+            "p5": "-Envoie nous ton CV + ta lettre de motivation ",
+            "p6": "-Précise le domaine et le poste que tu souhaites (finance, communication, marketing, etc)",
+            "p7": "Nos équipes traiteront ensuite ta demande et trouveront l’offre la plus adaptée à ta demande. Elles s’occuperont de toutes les démarches afin de t’obtenir un entretien avec l’entreprise et t’accompagneront jusqu’à la signature de ta convention. "
+        },
+        "insurance": {
+            "name": "Assurance",
+            "p1": "Choisis la formule assurance la plus adaptée pour te protéger durant ton expatriation. Avoir une assurance lorsque l'on part à l'étranger est absolument. Nos partenariats avec Mondial Assistance et Allianz nous permettent de te proposer les meilleures assurances aux  prix les plus attractifs du marché.",
+            "p2": "Tu as le choix entre deux formules :  ",
+            "p3": "Formule 1 : Adaptée pour être en sécurité dans ton pays d’échange.",
+            "p4": "Formule 2 :  Adaptée pour rester assuré avec tes bagages durant toutes visites/roadtrips dans les pays voisins ."
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

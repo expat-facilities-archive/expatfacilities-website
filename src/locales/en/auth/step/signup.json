@@ -1,0 +1,40 @@
+{
+  "form": {
+    "question": "Type your password",
+    "placeholder": "Password",
+    "button": "Login",
+    "forgot": "Forgot Password?"
+  },
+  "identity": {
+    "form": {
+      "question": "Who are you?",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "button": "Next"
+    }
+  },
+  "contact": {
+    "form": {
+      "question": "how can we contact you?",
+      "streetnum": "Street Number (Optional)",
+      "streetname": "Street Name",
+      "zipcode": "Zip Code",
+      "city": "City",
+      "button": "Next"
+    }
+  },
+  "password": {
+    "form": {
+      "question": "type your password",
+      "placeholder": "Password",
+      "error": "Password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, and 1 number",
+      "submit": "Register",
+      "disclaimer": {
+        "bypressing": "By pressing 'Register' you accept our",
+        "terms": "Terms",
+        "and": "and",
+        "privacy": "Privacy policy"
+      }
+    }
+  }
+}

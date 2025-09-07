@@ -1,0 +1,16 @@
+{
+  "title": "Foire aux questions",
+  "subtitle": "Si tu as des questions, généralement on y répond ici !",
+  "first": {
+    "question": "Dois-je me faire vacciner pour voyager ?",
+    "answer": "Avant de partir en voyage, il est important de se renseigner sur les précautions à prendre et les vaccins nécessaires dans le pays d'accueil. Il est préférable d’avoir tous les vaccins de base à jour et ce, peu importe la destination. Nous te recommandons vivement de consulter ton médecin traitant avant tout départ, il t’accompagnera dans ton parcours santé. Certains pays exigent des preuves de vaccination pour entrer dans le pays (passeport vaccinal, carnet de santé, etc)"    
+  },
+  "second": {
+    "question": "Puis-je obtenir une brochure ?",
+    "answer": "Expat Facilities essaie au mieux d’être respectueux de  l’environnement en limitant les impressions au maximum. C’est la raison pour laquelle nous n’imprimons pas de brochures papier. Cependant, si certaines destinations vous intéressent, il vous suffit de nous demander leurs brochures par mail à l'adresse contact@expatfacilities.co !"
+  },
+  "third": {
+    "question": "Les services d'Expat Facilities sont-ils accessibles à tous ?",
+    "answer": "Les services qu’Expat Facilities proposent sont principalement réservés aux étudiants français qui souhaitent partir dans le cadre de leurs études à l’étranger, pour apprendre une langue étrangère ou pour réaliser une année de césure."
+  }
+}

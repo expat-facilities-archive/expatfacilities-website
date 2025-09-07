@@ -1,0 +1,26 @@
+{
+  "head": {
+    "title": "Ambassadeur",
+    "description": "Renseigne-toi sur les modalités, les profils recherchés et la rémunération d’un ambassadeur chez Expat Facilities."
+  },
+  "title":"S’informer sur le rôle d’ambassadeur",
+  "subtitle":"Tout savoir sur nos ambassadeurs à travers le monde.",
+  "becomeAmbassador": "Devenir ambassadeur",
+  "about": {
+    "title": "Qu'est-ce qu'un ambassadeur ?",
+    "text":{
+      "first":"Un ambassadeur est un étudiant, comme toi, qui t’accompagne et te guide dans toutes tes démarches au sein de ton pays d’accueil ! Nous savons qu’il peut parfois être difficile de se retrouver seul dans un pays que l’on ne connaît pas. C’est pourquoi il nous semblait important de proposer un service comme celui-ci.",
+      "second":"En passant par la création de compte bancaire, l’ouverture de ta ligne téléphonique ou encore l’obtention de ton pass transports... Tu bénéficieras également d’une aide pour ton état des lieux afin d’éviter les désagréments ainsi que d’une aide à la finalisation de tes différents documents d’expatriation.",
+      "third":"Il est pour toi un vrai repère, toujours au contact des bons plans pour t'intégrer au mieux dans ton pays d’accueil. Il te fera bénéficier de ses informations incontournables et de ses précieux conseils."
+    }
+  },
+  "ambassadorsPictures": {
+    "title": "Des centaines d'ambassadeurs",
+    "subtitle": "Ils sont présents dans plus de 180 villes dans le monde entier"
+  },
+  "videos-carousel": "L'experience de %s1 en %s2",
+  "yourAmbassador": {
+    "title": "Ton futur ambassadeur",
+    "subtitle": "Découvre les ambassadeurs présents dans ton futur pays d'accueil."
+  }
+}

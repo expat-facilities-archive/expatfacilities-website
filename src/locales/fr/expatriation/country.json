@@ -1,0 +1,16 @@
+{
+  "details": {
+    "tripfrom": "Expatriation du ",
+    "tripto": "au ",
+    "pickcityquestion": "Dans quelle ville souhaiterais-tu t'installer ?",
+    "pickservicequestion": "Avec quels services souhaiterais-tu partir ?",
+    "addbutton": "Ajouter",
+    "removebutton": "Retirer",
+    "startbutton": "Commencer l'aventure",
+    "price": "Prix",
+    "startingat": "À partir de",
+    "unavailable":"Service non disponible",
+    "thiscountry":"pour ce pays",
+    "description": "Description"
+  }
+}

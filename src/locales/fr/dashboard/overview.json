@@ -1,0 +1,41 @@
+{
+  "sidebar": {
+    "overview": "Vue d'ensemble",
+    "trips": "Voyages",
+    "notifications":"Notifications",
+    "settings": "Paramètres",
+    "dashboard": "Tableau de bord",
+    "inbox": "Boîte de réception ",
+    "countries": "Pays",
+    "promo-codes": "Codes promotionels",
+    "services": "Services",
+    "users": "Utilisateurs",
+    "blog": "Blog",
+    "feedback": "Commentaires et Aide",
+    "sell-trip": "Commandes",
+    "sell-trip-service": "Commandes > Services"
+  },
+  "trip": {
+    "incomplete": "*Complète ton voyage dès maintenant :"
+  },
+  "emailconfirm": {
+    "success": "Ton compte a été vérifié avec succès ✅",
+    "close": "Fermer",
+    "verifying": "Nous vérifions l'authenticité de ton compte ...",
+    "click":"D'abord clique sur le lien de verification que nous t'avons envoyé par email à",
+    "mailbox": "Ouvre ta boite mail",
+    "resend": "Renvoyer",
+    "spam": "N'oublie pas de vérifier dans le dossier spam!"
+  },
+  "promotion": {
+    "title":"Expat Facilities fait peau neuve",
+    "subtitle": "Dashboard 2.0",
+    "description": "Après le nouveau logo, profite d'un nouveau dashboard en développement continu. Parcours dès maintenant les nouveautés !"
+  },
+  "news": {
+    "title":"Actus Expat",
+    "health": "L’assurance santé débarque au Brésil.",
+    "trip": "Expat s'envole pour l'Afrique du Sud.",
+    "contract": "Contrat d'1 million d'euros signé avec le Qatar !"
+  }
+}

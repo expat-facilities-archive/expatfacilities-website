@@ -1,0 +1,15 @@
+{
+  "header": {
+    "subtitle": "The essential expatriation service for students",
+    "description": "Go on an adventure and benefit from a complete accompaniment and a personalized student mobility."
+  },
+  "searchbar": {
+    "location": "Destination",
+    "where": "Where are you going ?",
+    "checkin": "From",
+    "checkout": "To",
+    "picker": {
+      "title": "Pick Check-in & Check-out dates"
+    }
+  }
+}

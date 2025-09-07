@@ -1,0 +1,9 @@
+{
+    "table":{
+        "users": "Users",
+        "email": "Email",
+        "role": "Role",
+        "phone": "Phone",
+        "createdAt": "Date of registration"
+    }
+}

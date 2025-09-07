@@ -1,0 +1,33 @@
+{
+  "insurance": {
+    "name": "Assurance",
+    "description": "Souscription à une assistance voyage à l’étranger grâce à notre partenaire Allianz.\n\nChoisis le pack assurance la plus adapté pour te protéger durant ton expatriation. Sois libre de voyager dans les pays voisins avec nos différentes formules.",
+    "details":"**Assurance santé jeunes à l’étranger**\n\nNotre partenaire Allianz nous permet de t'assurer une protection durant ton expatriation.\n\nUne équipe mobilisée pour trouver l’assurance qu’il te faut ! Pour simplifier tes démarches en cas d’accidents, de pertes et autres type de risque lié à ton voyage, tu es protégé avec Expat’s Facilities.\n\nNotre Formule 1 :\n - Individuel accident\n - Assistance au voyageur/rapatriement\n - Frais médicaux (y compris en cas de maladie liée à une épidémie/pandémie dont Covid-19) et d’hospitalisation, d’urgence à l’étranger\n - Frais d’hébergement d’un proche\n - Frais de recherche et/ou de secours\n - Assistance en cas de décès\n - Assistance juridique à l’étranger\n - Assistance rapatriement\n\nNotre formule 2 :\n - Individuel accident\n - Assistance au voyageur/rapatriement\n - Frais médicaux (y compris en cas de maladie liée à une épidémie/pandémie dont Covid-19) et d’hospitalisation, d’urgence à l’étranger\n - Frais d’hébergement d’un proche\n - Frais de recherche et/ou de secours\n - Assistance en cas de décès : rapatriement du corps, frais funéraires\n - Assistance juridique à l’étranger\n - Assistance rapatriement\n - Dommages aux bagages\n - Responsabilité civile vie privée à l’étranger et villégiature\n - Responsabilité civile locative\n - Interruption des études"
+  },
+  "visa": {
+    "name": "Visa Etudiant",
+    "catchphrase": "Création et obtention de ton Visa/carte de séjour dans ton pays d'accueil.",
+    "description": "Création et obtention de Visa/carte de séjour dans le pays d’accueil.\n\nOn s’occupe de tout pour toi ! Nos équipes se chargent d’obtenir un VISA dans les meilleurs délais grâce à notre partenaire Rapidevisa.",
+    "details":"**Commande ton visa en quelques clics**\n\nAprès avoir renseigné les documents nécessaires à l’obtention de ton visa, plus de prise de têtes, notre équipe s’occupe de tout coordonner pour toi.\n\nLes aléas de la création de ton visa sont souvent fastidieux, Expat’s Facilities s’occupe de tout pour toi.\n\nNotre partenaire RapideVisa est présent à nos côtés pour t'aider à obtenir ton visa dans les meilleurs délais.\n\nRapideVisa est une agence située à Paris dans le VIIIe arrondissement, elle est composée de 20 experts visas qui nous permettent de te proposer un service de qualité.\n\n[9.7/10 sur 10909 avis sur Avis-vérifiés.com](https://www.avis-verifies.com/avis-clients/rapidevisa.fr)"
+  },
+  "transportation": {
+    "name": "Transport",
+    "description": "Accompagnement de ton domicile jusqu’au logement choisi grâce à notre partenariat avec Lufthansa. Des prix préférentiels ? Deux bagages ? Escales ? Première classe ? Voyage selon tes envies avec Expat Facilities !",
+    "details":"**Accompagnement de ton pays de départ à ton pays d’arrivée**\n\nRecherche en fonction de tes critères pour arriver en toute sérénité à destination, Expat’s Facilities t'accompagne dans ton départ.\n\nAvion/Train/Taxi/Bus/Tramway... Une solution personnalisée et adaptée pour te transporter dans ton pays.\n\nUn entretien en visioconférence est prévu par la suite afin de te guider au mieux dans ce processus de réservation."
+  },
+  "housing": {
+    "name": "Logement",
+    "description": "Etude des logements disponibles en fonction de tes préférences et besoins.\n\nRecherche de ton logement idéal et accompagnement jusqu’à la signature.Tu auras la liberté de choisir parmi notre selection de trois appartement qui te correspondent.",
+    "details":"**Recherche de logements personnalisés**\n\nRecherche en fonction de tes critères pour trouver ton logement sur place, Expat’s Facilities t'accompagne dans ton arrivée.\n\nNotre réseau de partenaires immobiliers / propriétaires dans le monde nous permet de répondre au mieux à tes demandes, notre pôle international te fera plusieurs propositions de logement en fonction de tes critères.\n\nUn entretien en visioconférence est prévu par la suite afin de te guider au mieux dans les démarches administratives nécessaires à la location de ton hébergement."
+  },
+  "ambassador": {
+    "name": "Ambassadeur",
+    "description": "Service de guide et d’assistance administrative dans le pays d’accueil.\n\nÉtudiants ou expatriés présents pour t’accueillir et faciliter ton immersion grâce à des bons plans et à un accompagnement personnalisé sous forme de missions.",
+    "details":"**Service de guide et d’assistance dans ton pays d’accueil.**\n\nAu contact des bons plans pour t'intégrer au mieux dans ton pays.\nInformations incontournables, accompagnement personnalisé sur place, conseils...\n\nNos ambassadeurs Expat’s Facilities sont là pour toi !\n\nTon arrivée idéale à travers nos essentiels :\n\nCréation compte bancaire, ligne téléphonique, pass transports...\nUne aide dans ton état des lieux pour éviter les désagréments.\nUne aide à la finalisation de tes différents documents d’expatriation.\n\nPour commencer au mieux ton expatriation et éviter tous les soucis lors de ton arrivée, notre accompagnement se poursuit aussi sur place."
+  },
+  "language": {
+    "name": "Cours de langues",
+    "description": "Besoin d'apprendre la langue de ton pays d’accueil ?\n\nInscris-toi et bénéficie de cours de langue sur toute la durée de ton séjour, grâce à notre partenaire Babbel.",
+    "details":"**Cours de langue afin de te préparer pour l'expatriation**\n\nExpat’s Facilities met à ta disposition grâce à son partenaire Babbel des leçons dans plus de 10 langues.\n\nUn contenu diversifié et adapté à ta motivation, prépare-toi au mieux pour ton départ à l’étranger.\n\nRusse, Anglais, Espagnol, Portugais…  Reste connecté avec tes amis internationaux !"
+  }
+}

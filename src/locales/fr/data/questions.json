@@ -1,0 +1,16 @@
+{
+  "title": "Foire aux questions",
+  "subtitle": "Si tu as des questions, généralement on y répond ici !",
+  "first": {
+    "question": "Je recherche un stage à l’étranger pouvez-vous m’aider ?",
+    "answer": "Bien sûr ! Il te suffit de nous transmettre ton CV et ta lettre de motivation comprenant au minimum 3 informations (destination souhaitée, domaine de prédilection, durée de ton expérience professionnelle). Nous te mettrons ensuite en relation avec nos entreprises partenaires qui recherchent un profil comme le tien !"    
+  },
+  "second": {
+    "question": "Quelles sont les modalités de paiement ?",
+    "answer": "Vous pouvez payer par Carte bancaire (Visa, CB, MasterCard...)."
+  },
+  "third": {
+    "question": "Les services d'Expat Facilities sont-ils accessibles à tous ?",
+    "answer": "Les services qu’Expat Facilities propose sont principalement réservés aux étudiants français qui souhaitent partir dans le cadre de leurs études à l’étranger, pour apprendre une langue étrangère ou pour réaliser une année de césure."
+  }
+}

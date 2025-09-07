@@ -1,0 +1,14 @@
+{
+    "ambassador1": {
+        "name": "Kim Anh, 30 ans",
+        "description": "Kim Anh est une ambassadrice Expat Facilities au Vietnam. Passionnée de tourisme historique, le Vietnam n’a plus aucun secret pour Kim Anh ! Elle saura te guider et être un vrai repère pour toi au cœur de ton pays d’accueil. Kim Anh parle le vietnamien et l’anglais parfaitement, elle pourra donc t’accompagner dans tes démarches administratives sur place et te servir de traducteur si nécessaire."
+    },
+    "ambassador2": {
+        "name": "Alice, 20 ans",
+        "description": "Alice est une ambassadrice Expat Facilities à Hong Kong. Elle aime donner des cours particuliers, travailler avec les animaux et à un fort attrait pour la psychanalyse. Alice maîtrise trois langues : le cantonais, mandarin et l’anglais de quoi t’aider dans toutes tes démarches administratives sur place."
+    },
+    "ambassador3": {
+        "name": "Marco, 25 ans",
+        "description": "Marco est un ambassadeur Expat Facilities à Vancouver au Canada. Il effectue ses études à University Canada West (UCW) Vancouver et possède de l’expérience dans le domaine du marketing, de la finance et des ressources humaines. Véritable assoiffé de sport, Marco adore faire du vélo autour du Parc Stanley. Enfin, Marco parle couramment l’anglais et l’espagnol !"
+    }
+}

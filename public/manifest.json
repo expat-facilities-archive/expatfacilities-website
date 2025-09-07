@@ -1,0 +1,20 @@
+{
+    "name": "Expat Facilities",
+    "short_name": "Expat Facilities",
+    "icons": [
+        {
+            "src": "/static/images/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/images/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "theme_color": "#111315",
+    "background_color": "#111315",
+    "display": "standalone"
+}

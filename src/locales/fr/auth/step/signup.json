@@ -1,0 +1,40 @@
+{
+  "form": {
+    "question": "Entrez votre mot de passe",
+    "placeholder": "Mot de passe",
+    "button": "Connexion",
+    "forgot": "Mot de passe oublié?"
+  },
+  "identity": {
+    "form": {
+      "question": "Qui es-tu?",
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "button": "Suivant"
+    }
+  },
+  "contact": {
+    "form": {
+      "question": "comment pouvons-nous te contacter?",
+      "streetnum": "Numéro de rue (Optionnel)",
+      "streetname": "Nom de rue",
+      "zipcode": "Code postal",
+      "city": "Ville",
+      "button": "Suivant"
+    }
+  },
+  "password": {
+    "form": {
+      "question": "entrez votre mot de passe",
+      "placeholder": "Mot de passe",
+      "error": "Votre mot de passe doit contenir au moins 8 caractères, 1 lettre majuscule, 1 lettre minuscule et 1 chiffre",
+      "submit": "S'inscrire",
+      "disclaimer": {
+        "bypressing":"En cliquant sur 'S'inscrire' tu acceptes nos",
+        "terms":"Mentions légales",
+        "and":"et notre",
+        "privacy":"Politique de confidentialité"
+      }
+    }
+  }
+}

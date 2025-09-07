@@ -1,0 +1,20 @@
+{
+  "title":"L'équipe",
+  "catchphrase":"Toujours avec vous, partout.",
+  "founders": {
+    "title": "Fondateurs",
+    "maxence": "Co-fondateur et Président Directeur Général",
+    "jules": "Co-fondateur et Chargé des Relations Internationales",
+    "dylan": "Co-fondateur et Chargé des Partenariats"
+  },
+  "team": {
+    "title": "Team Expat",
+    "antoine":"Directeur de la technologie et Lead Developer",
+    "marc":"Directeur des ventes",
+    "lena":"Responsable de la communication et du marketing",
+    "jeremy":"Développeur Web Back-end",
+    "alexis":"Développeur Web Front-end",
+    "evan":"Responsable des relations internationales",
+    "lucas":"Responsable du design et de la communication"
+  }
+}

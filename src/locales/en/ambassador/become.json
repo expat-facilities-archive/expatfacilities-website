@@ -1,0 +1,31 @@
+{
+  "head": {
+    "title": "Become an Ambassador",
+    "description": "Find out more about the terms and conditions, the profiles sought and the remuneration of an ambassador at Expat Facilities"
+  },
+  "become": "Become an ambassador",
+  "description": "Find out more about the terms and conditions, the profiles sought and the remuneration of an ambassador at Expat Facilities.",
+  "what_ambassador" : "What is an ambassador ?",
+  "answer_what_ambassador" : {
+      "first": "An ambassador is a student who accompanies and guides our clients through all the steps in their host country! We know that it can sometimes be difficult for expats to find themselves alone in a country they don't know. That's why we thought it was important to offer them a service like this one",
+      "second": "From creating a bank account to opening a phone line or obtaining a transport pass... You will also be able to provide assistance for the inventory of fixtures in order to avoid inconveniences as well as help with the finalization of the various expatriation documents.",
+      "third": "Your role is to become a real reference for the person you will guide. You will have to be in touch with the right plans to help him or her integrate in the best way possible in the host country. You will give them the benefit of your indispensable information and your precious advice."
+  },
+  "how_to_become_ambassador": "How to become an ambassador ?",
+  "answer_how_to_become_ambassador":{
+      "first": "First of all, it is necessary to create your Expat account in order to be able to navigate freely on the website. Then you will have to send your application on the relevant page.",
+      "second": "Our teams will study your information and interview you to see if your application and profile are suitable and respect the Expat Facilities values. Finally, if validated, we will send you the steps to follow for the creation of your Ambassador profile, the information concerning the legal steps to officialize your activity and your beginning at Expat's Facilities!"
+  },
+  "compensation": "What is the compensation for an ambassador ?",
+  "answer_compensation":{
+      "first": "Ambassadors are paid per mission with a fixed amount per accompanied student, for example if you accompany 2 students to open a bank account, you are paid 20€ per student so you get 40€."
+  },
+  "pictures": {
+      "first":"Discover the photos of the community ",
+      "second":"#Expat",
+      "third":", on the networks !",
+      "fourth": "Follow us & identify ",
+      "fifth": "Expat Facilities ",
+      "sixth": "about your best travel memories."
+  }
+}

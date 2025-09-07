@@ -1,0 +1,26 @@
+{
+  "head": {
+    "title": "Ambassador",
+    "description": "Find out more about our ambassadors around the world"
+  },
+  "title":"Learn about the role of an ambassador",
+  "subtitle":"Find out more about our ambassadors around the world.",
+  "becomeAmbassador": "Become an ambassador",
+  "about": {
+    "title": "What is an ambassador ?",
+    "text":{
+      "first":"An ambassador is a student, just like you, who accompanies you and guides you through all the steps in your host country! We know that it can sometimes be difficult to find yourself alone in a country you don't know. That's why we thought it was important to offer a service like this.",
+      "second":"From setting up a bank account to opening a phone line or obtaining a transport pass... You will also benefit from help with your inventory of fixtures to avoid any inconvenience and help with the finalisation of your various expatriation documents.", 
+      "third":"It is a real reference point for you, always in touch with the right plans to integrate you as well as possible in your host country. He will give you the benefit of his invaluable information and advice."
+    }
+  },
+  "ambassadorsPictures": {
+    "title": "Hundreds of ambassadors",
+    "subtitle": "They are present in over 180 cities worldwide"
+  },
+  "videos-carousel": "%s1's experience, in %s2",
+  "yourAmbassador": {
+    "title": "Your future ambassador",
+    "subtitle": "Discover the ambassadors in your future host country."
+  }
+}

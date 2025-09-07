@@ -1,0 +1,9 @@
+{
+  "header": {
+    "early": "Bonjour!",
+    "morning": "Bonjour",
+    "afternoon": "Bonjour",
+    "evening": "Bonsoir",
+    "night": "Bonne nuit"
+  }
+}

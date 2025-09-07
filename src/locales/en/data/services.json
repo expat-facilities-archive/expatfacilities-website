@@ -1,0 +1,33 @@
+{
+  "insurance": {
+    "name": "Insurance",
+    "catchphrase": "Enjoy your exchange safely with Expat Facilities !",
+    "description": "Subscription to a travel assistance abroad thanks to our partner Allianz.\n\nChoose the most suitable insurance package to protect you during your expatriation. Be free to travel to neighbouring countries with our different packages.",
+    "details": "**Health insurance for young people abroad**\n\nOur partnership with Allianz allows us to provide you with protection during your expatriation.\n\nOur team is mobilised to find the right insurance for you! Expat Facilities can help you deal with accidents, losses and other risks related to your trip.\n\nOur Formula 1 :\n - Individual accident\n - Traveller assistance/repatriation\n - Medical costs (including epidemic/pandemic-related illness (including Covid-19) and hospitalisation, and emergency abroad\n - Accommodation costs for a relative\n - Search and/or rescue costs\n - Assistance in the event of death\n - Legal assistance abroad\n - Repatriation assistance\n\nOur Formula 2 :\n - Individual accident\n - Traveller assistance/repatriation\n - Medical costs (including epidemic/pandemic-related illness (including Covid-19) and hospitalisation, and emergency abroad\n - Accommodation costs for a relative\n - Search and/or rescue costs\n - Assistance in the event of death : repatriation of the body, funeral expenses\n - Legal assistance abroad\n - Repatriation assistance\n - Damage to the luggage\n - Civil liability for private life abroad and vacation\n - Civil liability for tenants\n - Interruption of studies"
+  },
+  "visa": {
+    "name": "Student Visa",
+    "description": "Creating and obtaining a Visa/residence card in the host country.\n\nWe take care of everything for you ! Our teams will take care of obtaining a VISA as quickly as possible thanks to our partner Rapidevisa.",
+    "details": "**Order your visa in a few clicks**\n\nAfter filling in the necessary documents to obtain your visa, no more headaches, our team takes care of coordinating everything for you.\n\nThe hazards of creating your visa are often tedious, Expat Facilities takes care of everything for you.\n\nOur partner RapideVisa is present at our side to get you your visa as soon as possible.\n\nRapideVisa is an agency located in Paris in the 8th district, it is composed of 20 visa experts who allow us to offer you a quality service.\n\n[9.7/10 out of 10909 reviews on Avis-vérifiés.com](https://www.avis-verifies.com/avis-clients/rapidevisa.fr)"
+  },
+  "transportation": {
+    "name": "Transportation",
+    "description": "Accompaniment from your home to your chosen accommodation thanks to our partnership with Lufthansa. Preferential prices? Two pieces of luggage ? Stopovers ? First class ? Travel according to your wishes with Expat Facilities !",
+    "details": "**Accompaniment from your country of departure to your country of arrival**\n\nSearch according to your criteria to arrive at your destination in complete serenity, Expat Facilities accompanies you in your departure.\n\nPlane/Train/Cab/Bus/Tramway... A personalized and adapted solution to transport you in your country.\n\nA video conference call is scheduled afterwards to guide you through the reservation process."
+  },
+  "housing": {
+    "name": "Housing",
+    "description": "Study of the available accommodation according to your preferences and needs.\n\nSearch and accompaniment until the signature of your ideal home. You will have the freedom to choose among our selection of three flats that suit you.",
+    "details": "**Search for customized housing**\n\nSearch according to your criteria to find your accommodation on site, Expat Facilities accompanies you in your arrival.\n\nOur network of real estate partners / owners in the world allows us to respond to your requests as well as possible, our international pole will make you several proposals of housing according to your criteria.\n\nA video conference call is scheduled afterwards to guide you through the necessary administrative procedures to rent your accommodation."
+  },
+  "ambassador": {
+    "name": "Ambassador",
+    "description": "Guidance and administrative assistance in the host country.\n\nStudents or expatriates are there to welcome you and facilitate your immersion thanks to good tips and personalised support in the form of missions.",
+    "details": "**Guidance and assistance in your host country.**\n\nIn contact with the good plans to integrate you in your country.\nEssential information, personalized assistance on site, advice...\n\nOur Expat’s Facilities ambassadors are there for you !\n\nYour ideal arrival through our essentials :\n\nCreation of a bank account, telephone line, transport pass...\nAssistance in your inventory of fixtures to avoid any inconvenience.\n Assistance with the finalization of your various expatriation documents.\n\nTo start your expatriation in the best possible way and to avoid any worries upon your arrival, our accompaniment also continues on site."
+  },
+  "language": {
+    "name": "Language courses",
+    "description": "Need to learn the language of your host country?\n\nSign up for language courses throughout your stay with our partner Babbel.",
+    "details": "**Language courses to prepare you for expatriation**\n\nExpat’s Facilities offers you lessons in more than 10 languages thanks to its partner Babbel.\n\nA diversified content adapted to your motivation to prepare you for your departure abroad in the best way possible.\n\nRussian, English, Spanish, Portuguese... Stay connected with your international friends !"
+  }
+}

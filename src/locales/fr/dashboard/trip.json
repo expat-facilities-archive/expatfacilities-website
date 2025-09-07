@@ -1,0 +1,80 @@
+{
+  "state-tracking": {
+    "drafted": {
+      "title": "Tracking et constitution",
+      "content": "C’est la phase de sélection. Tu peux dès maintenant commencer à préparer ton voyage en adaptant tes services et ta logistique."
+    }
+  },
+  "list": {
+    "trip": "Voyage",
+    "trips": "Voyages",
+    "tripto": "Voyage à",
+    "tripstate": "Actuellement",
+    "services": "Services",
+    "service": "service",
+    "status": "Statut",
+    "start": "Commence le",
+    "started": "Commencé le",
+    "nbservices": "Nombre de services",
+    "notrip": "Tu n'as pas encore de voyage",
+    "preparemytrip": "Préparer mon voyage",
+    "tracking&constitution": "Suivi & constitution",
+    "tripnotfilled": "Pourquoi mon voyage est Incomplet ?",
+    "discoverourguide": "Découvrir notre guide",
+    "smoverview": "Un petit aperçu de",
+    "city": "Ville"
+    },
+  "overview": {
+    "paybutton": "Valider pour %s",
+    "details": {
+      "title": "Détails de ton expatriation",
+      "savebutton": "Enregistrer",
+      "city": "Ville",
+      "startdate": "Date de départ",
+      "enddate": "Date de retour"
+    },
+    "services": {
+      "noservice": "Vous n'avez pas de service selectioné",
+      "noserviceavailable": "Vous avez selectionné tout nos services disponible",
+      "title": "Services",
+      "documents-provided": "documents fournis",
+      "tripstatus": "Statut du voyage",
+      "servicestatus": "Statut du service",
+      "totalcost": "Coût total",
+      "completemytrip": "Compléter mon voyage",
+      "documenttobeprovide": "Documents à fournir",
+      "finishtheconfiguation": "Terminer la configuration du service %s :",
+      "buttons": {
+        "add": "Ajouter",
+        "edit": "Modifier",
+        "complete": "Compléter",
+        "manage": "Gérer",
+        "create": "Créer mon voyage !"
+      },
+      "need": "De quoi as-tu besoin ?",
+      "suggest": "Laisse nous aussi te proposer :"
+    }
+  },
+  "home": {
+    "user": "Cet utilisateur ",
+    "notrip": " n'a pas de voyages en cours",
+    "nofuturtrip": "n'a pas de voyage futur"
+  },
+  "state": {
+    "trip": {
+      "drafted": "Incomplet",
+      "completed": "Prêt au paiement",
+      "paid": "Payé",
+      "started": "Démarré",
+      "ended": "Terminé",
+      "cancelled": "Annulé",
+      "archived": "Archivé"
+    },
+    "service": {
+      "drafted": "Incomplet",
+      "completed": "Complété"
+    }
+  }
+}
+
+

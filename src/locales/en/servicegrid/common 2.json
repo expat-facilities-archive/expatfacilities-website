@@ -1,0 +1,31 @@
+{
+  "title": "Choose the service(s) you need.",
+  "subtitle": "Learn more about all our services available",
+  "button": "View all services",
+  "services" : {
+      "visa": {
+          "title": "Visa",
+          "description": "Create and obtain your VISA/stay card in your host country"
+      },
+      "ambassador": {
+          "title": "Ambassador",
+          "description": "Guide and and advisor for your installation and administrative procedures"
+      },
+      "housing": {
+          "title": "Housing",
+          "description": "Find the right accommodation for you !"
+      },
+      "transport": {
+          "title": "Transport",
+          "description": "Fasten your seatbelt and let yourself be transported with Expat !"
+      },
+      "insurance": {
+          "title": "Insurance",
+          "description": "Enjoy your exchange in complete safety !"
+      },
+      "internship": {
+          "title": "Internship",
+          "description": "Find the perfect internship with Expat Facilities !"
+      }
+  }
+}

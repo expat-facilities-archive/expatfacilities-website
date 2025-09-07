@@ -1,0 +1,67 @@
+{
+  "list": {
+    "trip": "Trip",
+    "trips": "Trips",
+    "tripto": "Trip to",
+    "tripstate": "Currently",
+    "services": "services",
+    "service": "service",
+    "status": "Status",
+    "start": "Start the ",
+    "started": "Started on ",
+    "nbservices": "Number of services",
+    "notrip": "You don't have any trip yet",
+    "preparemytrip": "Prepare my trip",
+    "tracking&constitution": "Tracking & Constitution",
+    "tripnotfilled": "Why my trip is incomplete ?",
+    "discoverourguide": "Discover our guide",
+    "smoverview": "A brief overview of",
+    "city": "City"
+  },
+  "overview": {
+    "paybutton": "Validate for %s",
+    "details": {
+      "title": "Trip details",
+      "savebutton": "Save",
+      "city": "City",
+      "startdate": "Start date",
+      "enddate": "End date"
+    },
+    "services": {
+      "noservice": "You don't have selected any service",
+      "noserviceavailable": "You have selected of services available",
+      "title": "Services",
+      "documents-provided": "documents provided",
+      "tripstatus": "Trip status",
+      "servicestatus": "Statut service",
+      "totalcost": "Total cost",
+      "completemytrip": "Complete my trip",
+      "documenttobeprovide": "Documents to be provide",
+      "finishtheconfiguation": "Finish the configuation of the service ",
+      "buttons": {
+        "add": "Add",
+        "edit": "Edit",
+        "complete": "Complete",
+        "manage": "Manage",
+        "create": "Create my trip !"
+      },
+      "need": "What do you need ?",
+      "suggest": "We can also suggest :"
+    }
+  },
+  "home": {
+    "user": "This user ",
+    "notrip": " doesn't have a current trip",
+    "nofuturtrip": " doesn't have a future trip"
+  },
+  "state": {
+    "trip": {
+      "drafted": "En attente",
+      "completed": "Prêt au paiement"
+    },
+    "service": {
+      "drafted": "Incomplet",
+      "completed": "Complété"
+    }
+  }
+}

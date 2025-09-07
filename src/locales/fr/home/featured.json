@@ -1,0 +1,15 @@
+{
+  "header": {
+    "subtitle": "L’incontournable service d’expatriation pour les étudiants",
+    "description": "Pars à l'aventure en bénéficiant d'un accompagnement complet et d'une mobilité étudiante personnalisée."
+  },
+  "searchbar": {
+    "where": "Où vas-tu ?",
+    "location": "Destination",
+    "checkin": "Du",
+    "checkout": "Au",
+    "picker": {
+      "title": "Choisis la durée de ton expatriation"
+    }
+  }
+}

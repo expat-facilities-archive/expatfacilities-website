@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+
+# Host
+Host: https://expatfacilities.co
+
+# Sitemaps
+Sitemap: https://expatfacilities.co/sitemap.xml
+Sitemap: https://expatfacilities.co/server-sitemap.xml

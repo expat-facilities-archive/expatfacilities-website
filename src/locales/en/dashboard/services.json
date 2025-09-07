@@ -1,0 +1,9 @@
+{
+    "table":{
+        "serviceName": "Service name",
+        "price": "Price (in €)",
+        "nbOffer": "Number of offers",
+        "commission": "Commission (in %)",
+        "state": "Status"
+    }
+}

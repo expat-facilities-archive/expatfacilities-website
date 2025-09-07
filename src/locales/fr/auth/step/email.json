@@ -1,0 +1,11 @@
+{
+  "form": {
+    "question": "Quelle est votre adresse email?",
+    "placeholder": "Email",
+    "button": "Suivant"
+  },
+  "connect": {
+    "google": "Se connecter avec Google",
+    "facebook": "Se connecter avec Facebook"
+  }
+}

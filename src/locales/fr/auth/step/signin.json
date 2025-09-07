@@ -1,0 +1,8 @@
+{
+  "form": {
+    "question": "Entrez votre mot de passe",
+    "placeholder": "Mot de passe",
+    "button": "Connexion",
+    "forgot": "Mot de passe oublié?"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "sidebar": {
+    "overview": "Overview",
+    "trips": "Trips",
+    "notifications":"Notifications",
+    "settings": "Settings",
+    "dashboard": "Dashboard",
+    "inbox": "Inbox ",
+    "countries": "Countries",
+    "promo-codes": "Promo Codes",
+    "services": "Services",
+    "users": "Users",
+    "blog": "Blog",
+    "feedback": "Feedback & Support",
+    "sell-trip": "Orders",
+    "sell-trip-service": "Orders > Services"
+  },
+  "trip": {
+    "incomplete": "*Complete your trip now :"
+  },
+  "emailconfirm": {
+    "success": "Your account has been successfully verified ✅",
+    "close": "Close",
+    "verifying": "We're verifying the authenticity of your account...",
+    "click":"Please first click on the verification link we emailed you to",
+    "mailbox": "Open your mailbox",
+    "resend": "Resend",
+    "spam": "Don't forget to check your spam folder!"
+  },
+  "promotion": {
+    "title":"Expat Facilities has a new look !",
+    "subtitle": "Dashboard 2.0",
+    "description": "After the new logo, enjoy a new dashboard in continuous development. Take a look at the new features now!"
+  },
+  "news": {
+    "title":"Expat News",
+    "health": "Health insurance is coming to Brazil.",
+    "trip": "Expat flies to South Africa.",
+    "contract": "1 million euro contract signed with Qatar !"
+  }
+}

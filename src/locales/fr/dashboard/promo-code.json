@@ -1,0 +1,9 @@
+{
+  "table": {
+    "code": "Code",
+    "active": "Activé",
+    "used": "Utilisations",
+    "expirationDate": "Date d'expiration",
+    "creationDate": "Date de création"
+  }
+}

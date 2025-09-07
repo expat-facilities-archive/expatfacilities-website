@@ -1,0 +1,10 @@
+{
+    "user": "Utilisateurs",
+    "amount": "Montant",
+    "country": "Pays",
+    "departure": "Date de départ",
+    "status": "Statut",
+    "status-service": "Statut du service",
+    "nb-orders": "Nº Com.",
+    "date": "Date"
+}

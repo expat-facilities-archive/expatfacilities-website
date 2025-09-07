@@ -1,0 +1,10 @@
+{
+  "save":"Save",
+  "email":"Email",
+  "firstname":"First Name",
+  "lastname":"Last Name",
+  "phonenumber": "Phone Number",
+  "password":"Password",
+  "changepassword":"Change Password",
+  "deleteaccount":"Delete Account"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Frequently Asked Questions",
+  "subtitle": "If you have any questions, they are usually answered here!",
+  "first": {
+    "question": "I'm looking for an internship abroad, can you help me ?",
+    "answer": "Of course ! All you have to do is send us your CV and cover letter with at least 3 pieces of information (desired destination, preferred field, length of work experience). We will then put you in touch with our partner companies, who are looking for a profile like yours !"    
+  },
+  "second": {
+    "question": "What are the payment methods ?",
+    "answer": "You can pay by credit card (Visa, CB, MasterCard...)."
+  },
+    "third": {
+      "question": "Are Expat Facilities' services accessible to all ?",
+      "answer": "The services that Expat Facilities offers are mainly intended for French students who wish to study abroad, to learn a foreign language or to do a gap year."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "head": {
+    "title": "Devenir un Ambassadeur",
+    "description": "Renseigne-toi sur les modalités, les profils recherchés et la rémunération d’un ambassadeur chez Expat Facilities"
+  },
+  "become": "Devenir ambassadeur",
+  "description": "Renseigne-toi sur les modalités, les profils recherchés et la rémunération d’un ambassadeur chez Expat Facilities.",
+  "what_ambassador" : "Qu’est-ce qu’un ambassadeur ?",
+  "answer_what_ambassador" : {
+      "first": "Un ambassadeur est un étudiant qui accompagne et guide nos clients dans toutes les démarches au sein de leur pays d’accueil ! Nous savons qu’il peut parfois être difficile pour les expat’ de se retrouver seul dans un pays qu'ils ne connaissent pas. C’est pourquoi il nous semblait important de leur proposer un service comme celui-ci.",
+      "second": " En passant par la création de compte bancaire, l’ouverture de ligne téléphonique ou encore l’obtention de pass transports... Tu pourras également fournir une aide pour l’état des lieux afin d’éviter les désagréments ainsi qu’une aide à la finalisation des différents documents d’expatriation.",
+      "third": "Ton rôle est de devenir un vrai repère pour celui ou celle que tu guideras. Tu devras toujours être au contact des bons plans pour l’aider à s’intégrer au mieux dans le pays d’accueil. Tu le feras bénéficier de tes informations incontournables et de tes précieux conseils."
+  },
+  "how_to_become_ambassador" : "Comment devenir un ambassadeur ?",
+  "answer_how_to_become_ambassador":{
+      "first":"Tout d’abord, il est nécessaire de créer ton compte Expat pour pouvoir naviguer en toute liberté sur le site internet. Il faudra ensuite envoyer ta candidature sur la page concernée.",
+      "second":"Nos équipes pourront étudier tes informations et te feront passer un entretien pour voir si ta candidature et ton profil sont adaptés  et respectent les valeurs Expat Facilities. Enfin, si ta candidature est retenue, nous t’enverrons les démarches à suivre pour la création de ton profil Ambassadeur, les informations concernant les démarches légales pour officialiser ton activité et tes débuts chez Expat Facilities !"
+  },
+  "compensation":"Quelle est la rémunération d’un ambassadeur ?",
+  "answer_compensation":{
+      "first":"Les ambassadeurs sont payés à la mission avec un montant fixe par étudiant accompagné, par exemple si tu accompagnes 2 étudiants pour ouvrir un compte bancaire, tu es rémunéré 20€ par étudiant donc tu touches 40€."
+  },
+  "pictures": {
+      "first":"Découvre les photos de la communauté ",
+      "second":"#Expat",
+      "third":", sur les réseaux !",
+      "fourth": "Suis-nous & identifie ",
+      "fifth": "Expat Facilities ",
+      "sixth": "sur tes meilleurs souvenirs de voyage."
+  }
+}

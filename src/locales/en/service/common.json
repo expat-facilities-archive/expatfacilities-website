@@ -1,0 +1,53 @@
+{
+    "head": {
+        "title": "Services",
+        "description": "Discover the Expat Facilities services!"
+    },
+    "title": "See the detail of our support",
+    "subtitle": "Find out about all our actions before making your selection to go abroad",
+    "list":{
+        "title": "Choose the service(s) you need.",
+        "subtitle": "Get informed before you start your adventure!",
+        "visa": {
+            "name": "Visa",
+            "p1": "The creation of a visa is unfortunately often tedious. Expat Facilities takes care of everything for you in order to obtain a visa as soon as possible with our partner RapideVisa",
+            "p2": "To make your request, it's very simple! Just add the service to your shopping cart and provide the necessary information. Some documents may have to be sent by mail because they need to be in physical form, such as your passport. Please note that some consulates require that you apply for a visa yourself (Uruguay, Argentina...)",
+            "p3": "However, we will guide you from start to finish."
+        },
+        "housing": {
+            "name": "Housing",
+            "p1": "Expat Facilities is committed to finding and contracting your accommodation in your host country.",
+            "p2": "Thanks to our 200 partners around the world, we can guarantee you a quick search adapted to your needs so that you can leave for your exchange with a clear mind. During this search, three proposals will be made to you.",
+            "p3": "A real personal follow-up will be set up with the international pole to discuss with you the follow-up of your request and visits of the apartment in videoconference can be organized thanks to our ambassadors* directly present on site. Looking for accommodation has never been easier. With Expat Facilities, all you have to do is put the housing service in your shopping cart and follow the application process.",
+            "p4": "*paid service"
+        },
+        "ambasador": {
+            "name": "Ambasador",
+            "p1": "An ambassador is a student, just like you, who accompanies you and guides you through all the steps in your host country! We know that it can sometimes be difficult to be alone in a country you don't know. It was essential for us to remedy this problem by creating social links through our ambassadors.",
+            "p2": "He will also be there to help you finalize your installation and administrative procedures (creation of a bank account, opening of a telephone and internet line, obtaining your transport pass, inventory of your accommodation).",
+            "p3": "It is a real reference point for you to help you integrate into your host country. He will give you the benefit of his invaluable information and advice such as the best local addresses.",
+            "p4": "You can discover your ambassador through his presentation on our website."
+        },
+        "transport": {
+            "name": "Transport",
+            "p4": "Expat Facilities organizes your trip to your host country! Plane, Train, Taxi, Bus, Tram everything is chosen in the smallest details. Thanks to our partnership with Lufthansa, we can offer you preferential prices and an offer with two pieces of luggage in the hold. If you wish to add options such as a stopover, first class... it is possible! We propose a personalized and adapted offer to each one. It is essential for us to facilitate your expatriation through our services. Entrust us with your trip! Give us your point of departure and your point of arrival, our teams will organize all the necessary means of transportation to get you to your new home in complete safety. Go with peace of mind by booking your accompaniment."
+        },
+        "internship": {
+            "name": "Internship",
+            "p1": "Are you looking for an internship abroad and don't know where to start? ",
+            "p2": "By using Expat Facilities to find an internship abroad, you have access to a multitude of exclusive offers: engineering, communication, graphic design, finance or marketing internships. No more time-consuming searches. With Expat Facilities you are sure to find an internship that suits you and often pays. This service may be subject to a fee depending on the offer.",
+            "p3": "👉 How to apply? ",
+            "p4": "-Create your Expat Facilities account (link that redirects to the account creation)",
+            "p5": "-Send us your CV + cover letter ",
+            "p6": "-Specify the field and the position you want (finance, communication, marketing, etc)",
+            "p7": "Our teams will then process your application and find the most suitable offer for you. They will take care of all the steps to get you an interview with the company and will accompany you until the signature of your agreement. "
+        },
+        "insurance": {
+            "name": "Insurance",
+            "p1": "Choose the most appropriate insurance plan to protect you during your expatriation. Having an insurance when you go abroad is absolutely necessary. Our partnerships with Mondial Assistance and Allianz allow us to offer you the best insurance at the most attractive prices on the market.",
+            "p2": "You can choose between two options:  ",
+            "p3": "Bundle 1: Adapted to be safe in your exchange country.",
+            "p4": "Bundle 2 : Adapted to stay insured with your luggage during all visits/roadtrips in the neighboring countries."
+        }
+    }
+}

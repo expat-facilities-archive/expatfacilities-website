@@ -1,0 +1,10 @@
+{
+    "user": "Users",
+    "amount": "Amount",
+    "country": "Countries",
+    "departure": "Departure date",
+    "status": "Status",
+    "status-service": "Status of the service",
+    "nb-orders": "Order Nb",
+    "date": "Date"
+}

@@ -1,0 +1,28 @@
+{
+    "title": "Découvre comment Expat fonctionne !",
+    "subtitle": "Sois rassuré, on s’occupe de tout.",
+    "destination": {
+        "title": "Choisis une destination",
+        "description": "Tu as le choix parmi plus de 50 pays, tu trouvers forcément ton bonheur pour partir étudier sur une longue durée"
+    },
+    "services": {
+        "title": "Sélectionne tes services",
+        "description": "Nous proposons différents services pour faciliter ton départ : obtention de visa, recherches de ton logement, de ton assurance, suivi avec un ambassadeur..."
+    },
+    "cart": {
+        "title": "Valide ton panier",
+        "description": "Une fois tes services sélectionnés, procède au paiement afin d’obtenir un rendez-vous avec un conseiller qui va te suivre tout au long de ton aventure."
+    },
+    "trip": {
+        "title": "Suis l’avancée de ton voyage",
+        "description": "Grâce à notre tracking avancé et complet, sois informé de l’avancée de tes démarches afin d’être un réel acteur dans ton projet d’expatriation."
+    },
+    "documents": {
+        "title": "Réceptionne tes documents",
+        "description": "Tout est prêt ! Tu n’as plus qu’à réceptionner les documents dont tu auras besoin pour partir sereinement."
+    },
+    "enjoy": {
+        "title": "Profite de ton voyage Expat",
+        "description": "Tu peux enfin partir dans ton pays d’accueil et apprécier tes études à l’étranger sans souci, grâce à Expat Facilities."
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "form": {
+    "question": "What's your email address?",
+    "placeholder": "Email",
+    "button": "Next"
+  },
+  "connect": {
+    "google": "Connect with Google",
+    "facebook": "Connect with Facebook"
+  }
+}

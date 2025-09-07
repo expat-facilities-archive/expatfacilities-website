@@ -1,0 +1,28 @@
+{
+    "title": "Find out how Expat works!",
+    "subtitle": "Don't worry, we'll take care of everything.",
+    "destination": {
+        "title": "Choose you destination",
+        "description": "You can choose among more than 50 countries, you will find your happiness to study on a long term basis"
+    },
+    "services": {
+        "title": "Select your services",
+        "description": "We offer various services to facilitate your departure: obtaining a visa, finding your accommodation, insurance, follow-up with an ambassador..."
+    },
+    "cart": {
+        "title": "Validate your cart",
+        "description": "Once you have selected your services, proceed to payment in order to obtain an appointment with a consultant who will follow you throughout your adventure."
+    },
+    "trip": {
+        "title": "Follow the progress of your journey",
+        "description": "Thanks to our advanced and complete tracking, be informed of the progress of your steps to be a real actor in your expatriation project."
+    },
+    "documents": {
+        "title": "Get your documents",
+        "description": "Everything is ready! All you have to do is receive the documents you need to leave with peace of mind."
+    },
+    "enjoy": {
+        "title": "Enjoy your Expat trip",
+        "description": "You can finally go to your host country and enjoy your studies abroad without worries, thanks to Expat Facilities."
+    }
+}

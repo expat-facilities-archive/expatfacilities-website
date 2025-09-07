@@ -1,0 +1,34 @@
+{
+  "locale": {
+    "name": "Français"
+  },
+  "desc": "desc.",
+  "destinations": "Destinations",
+  "services": "Services",
+  "blog": "Blog",
+  "about": "À propos",
+  "dashboard": "Tableau de bord",
+  "login": "Se connecter",
+  
+  "footer": {
+    "informations": {
+      "title": "Informations",
+      "contact": "Contact",
+      "support": "Centre d'aide",
+      "terms": "Mentions légales",
+      "privacy": "Vie privée",
+      "settings_cookie": "Paramètres des cookies"
+    },
+    "company": {
+      "title": "Entreprise",
+      "about": "À propos",
+      "branding": "Branding",
+      "jobs": "Emplois",
+      "blog": "Blog"
+    },
+    "social": {
+      "title": "Réseaux sociaux"
+    },
+    "copyright":"Tous droits réservés"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "insurance": {
+    "name": "Assurance",
+    "description": "Profite de notre assurance pour partir l'esprit tranquille !",
+    "details":"**Assurance santé jeunes à l’étranger**\n\nNotre partenaire Allianz nous permet de t'assurer une protection durant ton expatriation.\n\nUne équipe mobilisée pour trouver l’assurance qu’il te faut ! Pour simplifier tes démarches en cas d’accidents, de pertes et autres types de risques liés à ton voyage, tu es protégé avec Expat’s Facilities.\n\nNotre Formule 1 :\n - Individuel accident\n - Assistance au voyageur/rapatriement\n - Frais médicaux (y compris en cas de maladie liée à une épidémie/pandémie dont Covid-19) et d’hospitalisation, d’urgence à l’étranger\n - Frais d’hébergement d’un proche\n - Frais de recherche et/ou de secours\n - Assistance en cas de décès\n - Assistance juridique à l’étranger\n - Assistance rapatriement\n\nNotre formule 2 :\n - Individuel accident\n - Assistance au voyageur/rapatriement\n - Frais médicaux (y compris en cas de maladie liée à une épidémie/pandémie dont Covid-19) et d’hospitalisation, d’urgence à l’étranger\n - Frais d’hébergement d’un proche\n - Frais de recherche et/ou de secours\n - Assistance en cas de décès : rapatriement du corps, frais funéraires\n - Assistance juridique à l’étranger\n - Assistance rapatriement\n - Dommages aux bagages\n - Responsabilité civile vie privée à l’étranger et villégiature\n - Responsabilité civile locative\n - Interruption des études"
+  },
+  "visa": {
+    "name": "Visa Etudiant",
+    "description": "Obtiens ton visa avec Expat Facilities !",
+    "details":"**Commande ton visa en quelques clics**\n\nAprès avoir renseigné les documents nécessaires à l’obtention de ton visa, plus de prise de tête, notre équipe s’occupe de tout coordonner pour toi.\n\nLes aléas de la création de ton visa sont souvent fastidieux, Expat’s Facilities s’occupe de tout pour toi.\n\nNotre partenaire RapideVisa est présent à nos côtés pour obtenir ton visa dans les meilleurs délais.\n\nRapideVisa est une agence située à Paris dans le VIIIe arrondissement, elle est composée de 20 experts visas qui nous permettent de te proposer un service de qualité.\n\n[9.7/10 sur 10909 avis sur Avis-vérifiés.com](https://www.avis-verifies.com/avis-clients/rapidevisa.fr)"
+  },
+  "transportation": {
+    "name": "Transport",
+    "description": "Découvre nos meilleurs trajets pour partir dans les meilleures conditions !",
+    "details":"**Accompagnement de ton pays de départ à ton pays d’arrivée**\n\nRecherche en fonction de tes critères pour arriver en toute sérénité à destination, Expat’s Facilities t'accompagne dans ton départ.\n\nAvion/Train/Taxi/Bus/Tramway... Une solution personnalisée et adaptée pour te transporter dans ton pays.\n\nUn entretien en visioconférence est prévu par la suite afin de te guider au mieux dans ce processus de réservation."
+  },
+  "housing": {
+    "name": "Logement",
+    "description": "Trouve ton logement grâce à nos partenaires partout dans le monde !",
+    "details":"**Recherche de logements personnalisés**\n\nRecherche en fonction de tes critères pour trouver ton logement sur place, Expat’s Facilities t'accompagne dans ton arrivée.\n\nNotre réseau de partenaires immobiliers / propriétaires dans le monde nous permet de répondre au mieux à tes demandes, notre pôle international te fera plusieurs propositions de logement en fonction de tes critères.\n\nUn entretien en visioconférence est prévu par la suite afin de te guider au mieux dans les démarches administratives nécessaires à la location de ton hébergement."
+  },
+  "ambassador": {
+    "name": "Ambassadeur",
+    "description": "Laisse-toi guider par nos ambassadeurs !",
+    "details":"**Service de guide et d’assistance dans ton pays d’accueil.**\n\nAu contact des bons plans pour t'intégrer au mieux dans ton pays.\nInformations incontournables, accompagnement personnalisé sur place, conseils...\n\nNos ambassadeurs Expat’s Facilities sont là pour toi !\n\nTon arrivée idéale à travers nos essentiels :\n\nCréation de compte bancaire, ligne téléphonique, pass transports...\nUne aide dans ton état des lieux pour éviter les désagréments.\nUne aide à la finalisation de tes différents documents d’expatriation.\n\nPour commencer au mieux ton expatriation et éviter tous les soucis lors de ton arrivée, notre accompagnement se poursuit aussi sur place."
+  },
+  "language": {
+    "name": "Cours de langues",
+    "description": "Viens découvrir de nouveaux horizons !",
+    "details":"**Cours de langue afin de te préparer pour l'expatriation**\n\nExpat’s Facilities met à ta disposition grâce à son partenaire Babbel des leçons dans plus de 10 langues.\n\nUn contenu diversifié et adapté à ta motivation, prépare-toi au mieux pour ton départ à l’étranger.\n\nRusse, Anglais, Espagnol, Portugais…  Reste connecté avec tes amis internationaux !"
+  }
+}

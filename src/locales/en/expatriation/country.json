@@ -1,0 +1,16 @@
+{
+  "details": {
+    "tripfrom": "Expatriation from ",
+    "tripto": "to ",
+    "pickcityquestion": "In which city would you like to settle down ?",
+    "pickservicequestion": "What services would you like to leave with ?",
+    "addbutton": "Add",
+    "removebutton":"Remove",
+    "startbutton": "Begin the adventure",
+    "price": "Price",
+    "startingat": "Starting at",
+    "unavailable":"Service not available",
+    "thiscountry":"for this country",
+    "description": "Description"
+  }
+}

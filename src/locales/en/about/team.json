@@ -1,0 +1,20 @@
+{
+  "title":"Team",
+  "catchphrase":"Always with you, everywhere.",
+  "founders": {
+    "title": "Founders",
+    "maxence": "Co-founder and Chief Executive Officer",
+    "jules": "Co-founder and International Relations Officer",
+    "dylan": "Co-founder and Partnerships Officer"
+  },
+  "team": {
+    "title": "Expat Team",
+    "antoine":"Chief Technology Officer and Lead Developer",
+    "marc":"Sales Manager",
+    "lena":"Communication and Marketing Manager",
+    "jeremy":"Back-end Web Developer",
+    "alexis":"Front-end Web Developer",
+    "evan":"International Relations Manager",
+    "lucas":"Design and Communication Manager"
+  }
+}

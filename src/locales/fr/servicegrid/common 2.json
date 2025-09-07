@@ -1,0 +1,31 @@
+{
+  "title": "Choisis le(s) services(s) qu'il te faut.",
+  "subtitle": "Documente-toi sur tous nos services disponible.",
+  "button": "Consulter tous les services",
+  "services" : {
+      "visa": {
+          "title": "Visa",
+          "description": "Création et obtention de ton VISA/carte de séjour dans ton pays d'accueil"
+      },
+      "ambassador": {
+          "title": "Ambassadeur",
+          "description": "Guide et conseiller pour ton installation et tes démarches adminstratives"
+      },
+      "housing": {
+          "title": "Logement",
+          "description": "Trouve un logement qui te correspond !"
+      },
+      "transport": {
+          "title": "Transport",
+          "description": "Accroche ta ceinture et laisse-toi transporter avec Expat !"
+      },
+      "insurance": {
+          "title": "Assurance",
+          "description": "Profite de ton échange en toute sécurité !"
+      },
+      "internship": {
+          "title": "Stage",
+          "description": "Trouve le stage idéal avec Expat Facilities !"
+      }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "auth": {
+    "credentials": "Wrong crendetials, please verify entered email and password.",
+    "invalid": "Invalid %s1",
+    "empty": "Empty %s1"
+  },
+  "unavailablefeature": "This feature is not available yet"
+}
